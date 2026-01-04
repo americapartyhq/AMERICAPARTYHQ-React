@@ -1,0 +1,21 @@
+.faq-browse-free-container1 {
+  width: 100%;
+  display: block;
+  min-height: 100vh;
+}
+ 
+.faq-browse-free-container2 {
+  display: none;
+}
+ 
+.faq-browse-free-container3 {
+  display: contents;
+}
+ 
+.faq-browse-free-container4 {
+  display: none;
+}
+ 
+.faq-browse-free-container5 {
+  display: contents;
+}

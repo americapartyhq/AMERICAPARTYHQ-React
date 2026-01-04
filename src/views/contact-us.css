@@ -1,0 +1,31 @@
+.contact-us-container1 {
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.contact-us-container2 {
+  display: none;
+}
+ 
+.contact-us-container3 {
+  display: contents;
+}
+ 
+.contact-us-container4 {
+  display: none;
+}
+ 
+.contact-us-container5 {
+  display: contents;
+}
+ 
+.contact-us-container6 {
+  display: none;
+}
+ 
+.contact-us-container7 {
+  display: contents;
+}

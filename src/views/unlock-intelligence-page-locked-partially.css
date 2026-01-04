@@ -1,0 +1,13 @@
+.unlock-intelligence-page-locked-partially-container1 {
+  width: 100%;
+  display: block;
+  min-height: 100vh;
+}
+ 
+.unlock-intelligence-page-locked-partially-container2 {
+  display: none;
+}
+ 
+.unlock-intelligence-page-locked-partially-container3 {
+  display: contents;
+}

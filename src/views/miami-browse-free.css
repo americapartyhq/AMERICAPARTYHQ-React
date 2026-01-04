@@ -1,0 +1,43 @@
+.miami-browse-free-container1 {
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.miami-browse-free-thq-miami-map-pin-elm1 {
+  top: 35%;
+  left: 45%;
+}
+ 
+.miami-browse-free-thq-miami-map-pin-elm2 {
+  top: 48%;
+  left: 52%;
+}
+ 
+.miami-browse-free-thq-miami-map-pin-elm3 {
+  top: 42%;
+  left: 38%;
+}
+ 
+.miami-browse-free-thq-miami-map-pin-elm4 {
+  top: 55%;
+  left: 60%;
+}
+ 
+.miami-browse-free-container2 {
+  display: none;
+}
+ 
+.miami-browse-free-container3 {
+  display: contents;
+}
+ 
+.miami-browse-free-container4 {
+  display: none;
+}
+ 
+.miami-browse-free-container5 {
+  display: contents;
+}

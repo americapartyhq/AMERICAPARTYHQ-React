@@ -1,0 +1,15 @@
+.new-york-browse-free-container1 {
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.new-york-browse-free-container2 {
+  display: none;
+}
+ 
+.new-york-browse-free-container3 {
+  display: contents;
+}

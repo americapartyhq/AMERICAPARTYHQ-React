@@ -1,0 +1,45 @@
+.top-picks-container10 {
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.top-picks-thq-navigation-wrapper-elm {
+  display: contents;
+}
+ 
+.top-picks-link14 {
+  text-decoration: none;
+}
+ 
+.top-picks-container21 {
+  display: none;
+}
+ 
+.top-picks-container22 {
+  display: contents;
+}
+ 
+.top-picks-thq-intelligence-price-highlight-elm {
+  color: var(--color-accent);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+}
+ 
+.top-picks-container45 {
+  display: none;
+}
+ 
+.top-picks-container46 {
+  display: contents;
+}
+ 
+.top-picks-container47 {
+  display: none;
+}
+ 
+.top-picks-container48 {
+  display: contents;
+}

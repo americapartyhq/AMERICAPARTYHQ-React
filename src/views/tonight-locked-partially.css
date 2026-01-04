@@ -1,0 +1,37 @@
+.tonight-locked-partially-container1 {
+  width: 100%;
+  display: block;
+  min-height: 100vh;
+}
+ 
+.tonight-locked-partially-component1 {
+  text-decoration: none;
+}
+ 
+.tonight-locked-partially-thq-slider-elm {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  position: absolute;
+  transition: 0.4s;
+  border-radius: 34px;
+  background-color: var(--color-neutral);
+}
+ 
+.tonight-locked-partially-container2 {
+  display: none;
+}
+ 
+.tonight-locked-partially-container3 {
+  display: contents;
+}
+ 
+.tonight-locked-partially-container4 {
+  display: none;
+}
+ 
+.tonight-locked-partially-container5 {
+  display: contents;
+}

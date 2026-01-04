@@ -1,0 +1,30 @@
+.los-angeles-browse-free-container1 {
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.los-angeles-browse-free-thq-la-peak-bar-elm1 {
+  width: 60%;
+  opacity: 0.6;
+}
+ 
+.los-angeles-browse-free-thq-la-peak-bar-elm2 {
+  width: 85%;
+  opacity: 0.85;
+}
+ 
+.los-angeles-browse-free-thq-la-peak-bar-elm3 {
+  width: 100%;
+  opacity: 1;
+}
+ 
+.los-angeles-browse-free-container2 {
+  display: none;
+}
+ 
+.los-angeles-browse-free-container3 {
+  display: contents;
+}
