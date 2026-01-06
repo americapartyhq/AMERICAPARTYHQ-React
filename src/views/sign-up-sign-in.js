@@ -32,6 +32,7 @@ const SignUpSignIn = (props) => {
             <form
               action="/signup"
               method="POST"
+              enctype="application/x-www-form-urlencoded"
               data-form-id="c0f332a8-e8e0-4d22-a6c5-37096fe47e18"
               className="auth-form"
             >
@@ -112,11 +113,10 @@ const SignUpSignIn = (props) => {
                 />
               </div>
               <button
-                id="thq_button_KJ3L"
+                id="tbld753fu6HOCSdvz"
                 name="button"
                 type="submit"
-                disabled
-                data-form-field-id="thq_button_KJ3L"
+                data-form-field-id="tbld753fu6HOCSdvz"
                 className="auth-submit-btn btn-accent btn btn-lg"
               >
                 Create Account
@@ -252,10 +252,10 @@ const SignUpSignIn = (props) => {
                 />
               </div>
               <button
-                id="thq_button_eM3b"
+                id="tbld753fu6HOCSdvz"
                 name="button"
                 type="submit"
-                data-form-field-id="thq_button_eM3b"
+                data-form-field-id="tbld753fu6HOCSdvz"
                 className="auth-submit-btn btn-accent btn btn-lg"
               >
                 Sign In

@@ -63,10 +63,18 @@ const TonightLockedPartially = (props) => {
               </select>
             </div>
             <div className="hero-btn-group">
-              <button className="btn btn-primary btn-lg">Browse Free</button>
-              <button className="btn-accent btn btn-lg">
+              <Link
+                to="/explore"
+                className="tonight-locked-partially-thq-btn-elm10 btn btn-primary btn-lg"
+              >
+                Browse Free
+              </Link>
+              <Link
+                to="/sub"
+                className="tonight-locked-partially-thq-btn-elm11 btn-accent btn btn-lg"
+              >
                 Unlock Intelligence — $9.99/month
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -648,10 +656,10 @@ const TonightLockedPartially = (props) => {
                 ></textarea>
               </div>
               <button
-                id="thq_button_6Yih"
+                id="tbl5Ll2muk1Jy41Se"
                 name="button"
                 type="submit"
-                data-form-field-id="thq_button_6Yih"
+                data-form-field-id="tbl5Ll2muk1Jy41Se"
                 className="btn-xl vip-submit-btn btn btn-primary"
               >
                 Submit VIP Request
@@ -695,9 +703,12 @@ const TonightLockedPartially = (props) => {
                     <path d="m6 9 6 6 6-6"></path>
                   </svg>
                 </div>
-                <button className="btn-xl btn-accent btn">
+                <Link
+                  to="/sub"
+                  className="tonight-locked-partially-thq-btn-elm19 btn-xl btn-accent btn"
+                >
                   Unlock Intelligence — $9.99/month
-                </button>
+                </Link>
               </div>
             </div>
           </div>

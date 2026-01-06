@@ -388,9 +388,11 @@ const VipInquiryBrowseFree = (props) => {
               </div>
               <div className="vip-inquiry-intelligence-dual-cta intelligence-dual-cta">
                 <div>
-                  <div className="btn-xl btn-outline vip-inquiry-btn-outline btn">
-                    <span>Browse Free Preview</span>
-                  </div>
+                  <Link to="/explore">
+                    <div className="vip-inquiry-browse-free-thq-btn-xl-elm1 btn-xl btn-outline vip-inquiry-btn-outline btn">
+                      <span>Browse Free Preview</span>
+                    </div>
+                  </Link>
                 </div>
                 <div>
                   <div className="btn-xl btn-accent btn">
@@ -677,7 +679,9 @@ const VipInquiryBrowseFree = (props) => {
                       data-form-field-id="thq_button_p1OB"
                       className="full-button vip-inquiry-vip-inquiry-btn-lg vip-inquiry-btn-lg btn btn-primary vip-inquiry-full-button btn-lg"
                     >
-                      <span>Submit Intelligence Inquiry</span>
+                      <span id="tbl5Ll2muk1Jy41Se">
+                        Submit Intelligence Inquiry
+                      </span>
                       <svg
                         fill="none"
                         width="20"
@@ -1582,7 +1586,7 @@ section {
                     </h3>
                     <p data-node-id="TQ_84bFaTtN57" className="footer-subtext">
                       Get exclusive intelligence access to the best events and
-                      VIP tables before they&amp;apos;re gone.
+                      VIP tables before they are gone.
                     </p>
                     <form
                       action="/subscribe"
@@ -1597,12 +1601,11 @@ section {
                       >
                         <input
                           type="email"
-                          id="thq_email_kXjf"
                           name="email"
                           required="true"
                           placeholder="Enter your email"
                           data-node-id="TQ_qTt5f0ullK"
-                          data-form-field-id="thq_email_kXjf"
+                          data-form-field-id="email"
                           className="footer-input"
                         />
                         <button

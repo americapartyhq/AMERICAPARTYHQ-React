@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import { Helmet } from 'react-helmet'
 
@@ -22,7 +23,6 @@ const HomeBrowseFree = (props) => {
             src="https://images.pexels.com/photos/5191134/pexels-photo-5191134.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
             className="premium-hero-image"
           />
-          <div className="premium-hero-overlay"></div>
         </div>
         <div className="premium-hero-content">
           <h1 className="hero-title">
@@ -33,12 +33,18 @@ const HomeBrowseFree = (props) => {
             and ratings with membership.
           </p>
           <div className="premium-hero-actions">
-            <button className="btn-accent btn btn-lg">
+            <Link
+              to="/explore"
+              className="home-browse-free-thq-btn-elm10 btn-accent btn btn-lg"
+            >
               Browse Free Preview
-            </button>
-            <button className="btn-outline btn btn-lg">
+            </Link>
+            <Link
+              to="/sub"
+              className="home-browse-free-thq-btn-elm11 btn-outline btn btn-lg"
+            >
               Unlock Intelligence — $9.99/month
-            </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -162,12 +168,12 @@ const HomeBrowseFree = (props) => {
             </div>
           </div>
           <div className="membership-cta">
-            <button className="btn-accent btn membership-join-btn btn-lg">
+            <Link
+              to="/sub"
+              className="home-browse-free-thq-btn-elm12 btn-accent btn membership-join-btn btn-lg"
+            >
               Join for $9.99/month
-            </button>
-            <span className="membership-guarantee">
-              Cancel anytime. No hidden fees.
-            </span>
+            </Link>
           </div>
         </div>
       </section>
@@ -293,9 +299,12 @@ const HomeBrowseFree = (props) => {
                   Ultra-premium experience with A-list DJs and world-class
                   production.
                 </p>
-                <button className="btn-secondary btn-sm btn">
+                <Link
+                  to="/sub"
+                  className="home-browse-free-thq-btn-elm13 btn-secondary btn-sm btn"
+                >
                   Unlock for $9.99/month
-                </button>
+                </Link>
               </div>
             </div>
             <div className="gated-club-card">
@@ -411,9 +420,12 @@ const HomeBrowseFree = (props) => {
                   Manhattan&apos;s premier destination for real crowds and
                   authentic nightlife energy.
                 </p>
-                <button className="btn-secondary btn-sm btn">
+                <Link
+                  to="/sub"
+                  className="home-browse-free-thq-btn-elm14 btn-secondary btn-sm btn"
+                >
                   Unlock for $9.99/month
-                </button>
+                </Link>
               </div>
             </div>
             <div className="gated-club-card">
@@ -529,9 +541,12 @@ const HomeBrowseFree = (props) => {
                   Vegas crown jewel delivering legendary opulence and top-tier
                   talent nightly.
                 </p>
-                <button className="btn-secondary btn-sm btn">
+                <Link
+                  to="/sub"
+                  className="home-browse-free-thq-btn-elm15 btn-secondary btn-sm btn"
+                >
                   Unlock for $9.99/month
-                </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -628,9 +643,12 @@ const HomeBrowseFree = (props) => {
                   </div>
                 </div>
               </div>
-              <button className="btn-outline btn-sm btn">
+              <Link
+                to="/sub"
+                className="home-browse-free-thq-btn-elm16 btn-outline btn-sm btn"
+              >
                 Unlock Full Rankings
-              </button>
+              </Link>
             </div>
             <div className="gated-category-card">
               <div className="gated-category-icon">
@@ -714,9 +732,12 @@ const HomeBrowseFree = (props) => {
                   </div>
                 </div>
               </div>
-              <button className="btn-outline btn-sm btn">
+              <Link
+                to="/sub"
+                className="home-browse-free-thq-btn-elm17 btn-outline btn-sm btn"
+              >
                 Unlock Full Rankings
-              </button>
+              </Link>
             </div>
             <div className="gated-category-card">
               <div className="gated-category-icon">
@@ -801,9 +822,12 @@ const HomeBrowseFree = (props) => {
                   </div>
                 </div>
               </div>
-              <button className="btn-outline btn-sm btn">
+              <Link
+                to="/sub"
+                className="home-browse-free-thq-btn-elm18 btn-outline btn-sm btn"
+              >
                 Unlock Full Rankings
-              </button>
+              </Link>
             </div>
             <div className="gated-category-card">
               <div className="gated-category-icon">
@@ -888,9 +912,12 @@ const HomeBrowseFree = (props) => {
                   </div>
                 </div>
               </div>
-              <button className="btn-outline btn-sm btn">
+              <Link
+                to="/sub"
+                className="home-browse-free-thq-btn-elm19 btn-outline btn-sm btn"
+              >
                 Unlock Full Rankings
-              </button>
+              </Link>
             </div>
             <div className="gated-category-card">
               <div className="gated-category-icon">
@@ -974,9 +1001,12 @@ const HomeBrowseFree = (props) => {
                   </div>
                 </div>
               </div>
-              <button className="btn-outline btn-sm btn">
+              <Link
+                to="/sub"
+                className="home-browse-free-thq-btn-elm20 btn-outline btn-sm btn"
+              >
                 Unlock Full Rankings
-              </button>
+              </Link>
             </div>
             <div className="gated-category-card">
               <div className="gated-category-icon">
@@ -1060,9 +1090,12 @@ const HomeBrowseFree = (props) => {
                   </div>
                 </div>
               </div>
-              <button className="btn-outline btn-sm btn">
+              <Link
+                to="/sub"
+                className="home-browse-free-thq-btn-elm21 btn-outline btn-sm btn"
+              >
                 Unlock Full Rankings
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -1178,12 +1211,18 @@ const HomeBrowseFree = (props) => {
               Cancel anytime.
             </p>
             <div className="premium-final-cta-actions">
-              <button className="btn-xl btn-accent btn">
+              <Link
+                to="/sub"
+                className="home-browse-free-thq-btn-elm22 btn-xl btn-accent btn"
+              >
                 Join for $9.99/month
-              </button>
-              <button className="btn-outline btn btn-lg">
+              </Link>
+              <Link
+                to="/explore"
+                className="home-browse-free-thq-btn-elm23 btn-outline btn btn-lg"
+              >
                 Browse Free Preview
-              </button>
+              </Link>
             </div>
             <div className="premium-final-cta-features">
               <div className="premium-cta-feature">

@@ -14,6 +14,34 @@
   display: contents;
 }
  
+.contact-us-thq-btn-elm {
+  text-decoration: none;
+}
+ 
+.contact-us-thq-contact-info-text-elm2 {
+  width: auto;
+  display: flex;
+  padding: 8px;
+  overflow: visible;
+  font-size: 14px;
+  word-wrap: normal;
+  text-align: center;
+  align-items: center;
+  line-height: 1.5;
+  margin-left: auto;
+  white-space: nowrap;
+  margin-right: auto;
+  justify-content: center;
+}
+ 
+.contact-us-icon25 {
+  text-decoration: none;
+}
+ 
+.contact-us-thq-contact-social-link-elm2 {
+  text-decoration: none;
+}
+ 
 .contact-us-container4 {
   display: none;
 }

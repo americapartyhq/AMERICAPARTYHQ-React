@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import { Helmet } from 'react-helmet'
 
@@ -1069,10 +1070,10 @@ const PartnershipBrowseFree = (props) => {
                 ></textarea>
               </div>
               <button
-                id="thq_button_g8Kr"
+                id="tblGIWAlPGVnqbkmp"
                 name="button"
                 type="submit"
-                data-form-field-id="thq_button_g8Kr"
+                data-form-field-id="tblGIWAlPGVnqbkmp"
                 className="partners-form-submit btn-accent btn btn-lg"
               >
                 Submit Application
@@ -1294,10 +1295,18 @@ const PartnershipBrowseFree = (props) => {
               premier nightlife platform
             </p>
             <div className="partners-final-cta-actions">
-              <button className="btn-xl btn-accent btn">
+              <Link
+                to="/partnership-browse-free"
+                className="partnership-browse-free-thq-btn-elm7 btn-xl btn-accent btn"
+              >
                 Apply to Partner Program
-              </button>
-              <button className="btn-xl btn-outline btn">Contact Sales</button>
+              </Link>
+              <Link
+                to="/contact"
+                className="partnership-browse-free-thq-btn-elm8 btn-xl btn-outline btn"
+              >
+                Contact Sales
+              </Link>
             </div>
           </div>
         </div>

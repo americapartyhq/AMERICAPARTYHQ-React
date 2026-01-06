@@ -599,13 +599,13 @@
   gap: var(--spacing-xs);
   border: 1px solid transparent;
   cursor: pointer;
-  display: inline-flex;
   padding: var(--spacing-md) var(--spacing-lg);
   font-size: var(--font-size-base);
   box-shadow: var(--shadow-level-1);
   text-align: center;
   transition: all 0.2s ease-in-out;
   align-items: center;
+  flex-shrink: 0;
   font-family: var(--font-family-body);
   font-weight: var(--font-weight-medium);
   line-height: var(--line-height-body);
@@ -5244,8 +5244,10 @@
 }
  
 .premium-hero-actions {
-  gap: var(--spacing-md);
+  gap: 16px;
   display: flex;
+  align-items: center;
+  flex-direction: row;
   justify-content: center;
 }
  
@@ -12922,6 +12924,2660 @@
   transform: scale(1.1);
 }
  
+.top-picks-top-picks---featured-clubs-vip-card {
+  border: 1px solid var(--color-outline);
+  margin: 0 auto;
+  padding: var(--spacing-3xl);
+  overflow: hidden;
+  position: relative;
+  max-width: 900px;
+  background: linear-gradient(135deg, var(--color-surface-elevated) 0%, #1a1817 100%);
+  text-align: center;
+  border-radius: var(--border-radius-xl);
+}
+ 
+.top-picks-vip-content {
+  gap: var(--spacing-lg);
+  display: flex;
+  z-index: 2;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.top-picks-intelligence-unlock-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.top-picks-intelligence-features-grid {
+  gap: var(--spacing-lg);
+  width: 100%;
+  border: 1px solid rgba(255, 215, 138, 0.1);
+  display: grid;
+  padding: var(--spacing-xl);
+  max-width: 600px;
+  background: rgba(255, 215, 138, 0.03);
+  border-radius: var(--border-radius-lg);
+  grid-template-columns: repeat(2, 1fr);
+}
+ 
+.top-picks-btn-accent {
+  color: var(--color-on-accent);
+  border-color: var(--color-accent);
+  background-color: var(--color-accent);
+}
+ 
+.top-picks-intelligence-primary-cta {
+  width: 100%;
+  max-width: 400px;
+}
+ 
+.top-picks-intelligence-pricing-note {
+  color: var(--color-on-surface-secondary);
+  font-size: var(--font-size-sm);
+  text-align: center;
+  line-height: 1.6;
+}
+ 
+.top-picks-intelligence-feature-item {
+  gap: var(--spacing-md);
+  color: var(--color-on-surface);
+  display: flex;
+  font-size: var(--font-size-sm);
+  align-items: center;
+  font-weight: var(--font-weight-medium);
+  justify-content: flex-start;
+}
+ 
+.thq-intelligence-price-highlight-elm {
+  color: var(--color-accent);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+}
+ 
+.top-picks-btn-accent:hover:not(:disabled) {
+  border-color: color-mix(in oklab, var(--color-accent) 90%, var(--color-surface));
+  background-color: color-mix(in oklab, var(--color-accent) 90%, var(--color-surface));
+}
+ 
+.top-picks-top-picks---featured-clubs-vip-card::before {
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  content: "";
+  position: absolute;
+  background: radial-gradient(circle, rgba(184, 134, 20, 0.05) 0%, transparent 70%);
+  pointer-events: none;
+}
+ 
+.top-picks-intelligence-unlock-header  svg {
+  color: var(--color-accent);
+  width: 48px;
+  filter: drop-shadow(0 4px 20px rgba(255, 215, 138, 0.4));
+  height: 48px;
+}
+ 
+.top-picks-intelligence-feature-item  svg {
+  color: var(--color-accent);
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+ 
+.intelligence-footer-section {
+  padding: var(--spacing-4xl) var(--spacing-xl);
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(180deg, #000000 0%, #1a1a1a 50%, #0d0b0a 100%);
+}
+ 
+.intelligence-footer-container {
+  gap: var(--spacing-4xl);
+  margin: 0 auto;
+  display: flex;
+  z-index: 2;
+  position: relative;
+  max-width: var(--content-max-width);
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.intelligence-footer-bulk-cta {
+  gap: var(--spacing-lg);
+  display: flex;
+  max-width: 50rem;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.intelligence-footer-member-box {
+  width: 100%;
+  border: 1px solid var(--color-accent);
+  padding: var(--spacing-xl) var(--spacing-2xl);
+  max-width: 56rem;
+  background: var(--color-surface-elevated);
+  box-shadow: 0 0 30px color-mix(in srgb, var(--color-accent) 15%, transparent);
+  border-radius: var(--border-radius-lg);
+}
+ 
+.intelligence-footer-vip-cta {
+  gap: var(--spacing-lg);
+  width: 100%;
+  display: flex;
+  max-width: 48rem;
+  border-top: 1px solid var(--color-outline);
+  text-align: center;
+  align-items: center;
+  padding-top: var(--spacing-2xl);
+  flex-direction: column;
+}
+ 
+.intelligence-footer-heading {
+  color: var(--color-on-surface);
+  margin: 0;
+}
+ 
+.intelligence-footer-subheading {
+  color: var(--color-on-surface-secondary);
+  margin: 0;
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-body);
+}
+ 
+.intelligence-footer-cta-actions {
+  gap: var(--spacing-md);
+  display: flex;
+  margin-top: var(--spacing-md);
+  align-items: center;
+}
+ 
+.intelligence-footer-member-content {
+  gap: var(--spacing-lg);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.intelligence-footer-vip-heading {
+  color: var(--color-on-surface);
+  margin: 0;
+}
+ 
+.intelligence-footer-vip-subheading {
+  color: var(--color-on-surface-secondary);
+  margin: 0;
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-body);
+}
+ 
+.intelligence-footer-vip-button {
+  box-shadow: 0 4px 20px color-mix(in srgb, var(--color-accent) 30%, transparent);
+  margin-top: var(--spacing-md);
+  transition: all 0.3s ease;
+}
+ 
+.intelligence-footer-member-text {
+  color: var(--color-on-surface);
+  margin: 0;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-body);
+}
+ 
+.intelligence-footer-member-icons {
+  gap: var(--spacing-xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.intelligence-footer-icon-item {
+  color: var(--color-accent);
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  transition: all 0.3s ease;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.intelligence-footer-section::before {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  z-index: 1;
+  position: absolute;
+  background: radial-gradient(circle at 50% 0%, color-mix(in srgb, var(--color-secondary) 8%, transparent), transparent 70%);
+  pointer-events: none;
+}
+ 
+.intelligence-footer-icon-item:hover {
+  filter: drop-shadow(0 0 8px var(--color-accent));
+  transform: scale(1.15);
+}
+ 
+.intelligence-footer-vip-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 30px color-mix(in srgb, var(--color-accent) 40%, transparent);
+}
+ 
+
+ 
+.venues-intelligence-page {
+  width: 100%;
+  min-height: 100vh;
+}
+ 
+.intelligence-hero-section {
+  height: 60vh;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  min-height: 500px;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.intelligence-sticky-filter-bar {
+  top: 0;
+  padding: var(--spacing-lg) var(--spacing-md);
+  z-index: 100;
+  position: sticky;
+  background: var(--color-surface);
+  box-shadow: 0 4px 20px color-mix(in srgb, var(--color-accent) 10%, transparent);
+  border-bottom: 1px solid var(--color-accent);
+}
+ 
+.intelligence-venues-section {
+  padding: var(--spacing-4xl) var(--spacing-md);
+  background: var(--color-surface);
+}
+ 
+.intelligence-hero-background {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+}
+ 
+.intelligence-hero-particles {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  position: absolute;
+  animation: particleFloat 8s ease-in-out infinite;
+  background-image: radial-gradient(circle at 20% 30%, color-mix(in srgb, var(--color-accent) 15%, transparent) 0%, transparent 50%),radial-gradient(circle at 80% 70%, color-mix(in srgb, var(--color-accent) 10%, transparent) 0%, transparent 50%),radial-gradient(circle at 50% 50%, color-mix(in srgb, var(--color-accent) 8%, transparent) 0%, transparent 60%);
+}
+ 
+.intelligence-hero-content {
+  padding: var(--spacing-xl);
+  z-index: 3;
+  position: relative;
+  max-width: 1000px;
+  text-align: center;
+}
+ 
+.intelligence-filter-container {
+  gap: var(--spacing-lg);
+  margin: 0 auto;
+  display: flex;
+  max-width: var(--content-max-width);
+  align-items: flex-end;
+}
+ 
+.intelligence-section-container {
+  margin: 0 auto;
+  max-width: var(--content-max-width);
+}
+ 
+.intelligence-hero-title {
+  color: var(--color-accent);
+  text-shadow: 0 0 40px color-mix(in srgb, var(--color-accent) 30%, transparent);
+  margin-bottom: var(--spacing-md);
+}
+ 
+.intelligence-hero-subtitle {
+  color: var(--color-on-surface);
+  opacity: 0.95;
+  font-size: var(--font-size-xl);
+}
+ 
+.intelligence-filter-group {
+  gap: var(--spacing-xs);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+ 
+.intelligence-search-group {
+  flex: 2;
+}
+ 
+.intelligence-city-heading {
+  color: var(--color-accent);
+  text-align: left;
+  margin-bottom: var(--spacing-3xl);
+}
+ 
+.intelligence-venues-grid {
+  gap: var(--spacing-2xl);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+ 
+.intelligence-filter-label {
+  color: var(--color-accent);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+ 
+.intelligence-select-wrapper {
+  position: relative;
+}
+ 
+.intelligence-search-wrapper {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+ 
+.intelligence-venue-card {
+  border: 1px solid var(--color-accent);
+  padding: var(--spacing-xl);
+  position: relative;
+  background: #0f0f0f;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: var(--border-radius-lg);
+}
+ 
+.intelligence-filter-select {
+  color: var(--color-on-surface);
+  width: 100%;
+  border: 1px solid var(--color-border);
+  cursor: pointer;
+  padding: var(--spacing-md) var(--spacing-lg);
+  font-size: var(--font-size-base);
+  appearance: none;
+  background: var(--color-surface-elevated);
+  transition: all 0.3s ease;
+  font-family: var(--font-family-body);
+  border-radius: var(--border-radius-control);
+  padding-right: 40px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%23D4AF37' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right var(--spacing-md) center;
+}
+ 
+.intelligence-search-icon {
+  left: var(--spacing-md);
+  color: var(--color-accent);
+  z-index: 2;
+  position: absolute;
+  pointer-events: none;
+}
+ 
+.intelligence-search-input {
+  color: var(--color-on-surface);
+  width: 100%;
+  border: 1px solid var(--color-border);
+  padding: var(--spacing-md) var(--spacing-lg) var(--spacing-md) 44px;
+  font-size: var(--font-size-base);
+  background: var(--color-surface-elevated);
+  transition: all 0.3s ease;
+  font-family: var(--font-family-body);
+  border-radius: var(--border-radius-control);
+}
+ 
+.intelligence-card-unlock-badge {
+  top: var(--spacing-lg);
+  color: var(--color-accent);
+  right: var(--spacing-lg);
+  width: 36px;
+  height: 36px;
+  display: flex;
+  position: absolute;
+  background: color-mix(in srgb, var(--color-accent) 15%, transparent);
+  align-items: center;
+  border-radius: var(--border-radius-full);
+  justify-content: center;
+}
+ 
+.intelligence-card-header {
+  margin-bottom: var(--spacing-lg);
+}
+ 
+.intelligence-quick-snapshot {
+  gap: var(--spacing-sm);
+  color: var(--color-on-surface-secondary);
+  display: flex;
+  padding: var(--spacing-md) 0;
+  flex-wrap: wrap;
+  font-size: var(--font-size-sm);
+  align-items: center;
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: var(--spacing-lg);
+}
+ 
+.intelligence-info-section {
+  margin-bottom: var(--spacing-xl);
+}
+ 
+.intelligence-card-actions {
+  gap: var(--spacing-md);
+  display: flex;
+  border-top: 1px solid var(--color-border);
+  margin-top: var(--spacing-xl);
+  padding-top: var(--spacing-xl);
+}
+ 
+.intelligence-venue-name {
+  color: var(--color-on-surface);
+  font-size: var(--font-size-2xl);
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-heading);
+  line-height: var(--line-height-heading);
+  margin-bottom: var(--spacing-sm);
+}
+ 
+.intelligence-header-tags {
+  gap: var(--spacing-sm);
+  display: flex;
+  flex-wrap: wrap;
+}
+ 
+.intelligence-snapshot-item {
+  color: var(--color-on-surface-secondary);
+}
+ 
+.intelligence-snapshot-divider {
+  color: var(--color-accent);
+  opacity: 0.5;
+}
+ 
+.intelligence-section-label {
+  color: var(--color-accent);
+  font-size: var(--font-size-lg);
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-heading);
+  margin-bottom: var(--spacing-md);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+ 
+.intelligence-info-content {
+  gap: var(--spacing-sm);
+  display: flex;
+  flex-direction: column;
+}
+ 
+.intelligence-cost-grid {
+  gap: var(--spacing-md);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+ 
+.intelligence-rating-content {
+  gap: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+}
+ 
+.intelligence-vip-btn {
+  flex: 1;
+}
+ 
+.intelligence-save-btn {
+  gap: var(--spacing-xs);
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.intelligence-city-tag {
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+  display: inline-block;
+  padding: 4px var(--spacing-sm);
+  font-size: var(--font-size-xs);
+  background: color-mix(in srgb, var(--color-accent) 15%, transparent);
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--border-radius-sm);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+ 
+.intelligence-category-tag {
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+  display: inline-block;
+  padding: 4px var(--spacing-sm);
+  font-size: var(--font-size-xs);
+  background: color-mix(in srgb, var(--color-accent) 15%, transparent);
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--border-radius-sm);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+ 
+.intelligence-member-badge {
+  color: var(--color-on-accent);
+  display: inline-block;
+  padding: 4px var(--spacing-sm);
+  font-size: var(--font-size-xs);
+  background: var(--color-accent);
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--border-radius-sm);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+ 
+.intelligence-info-item {
+  color: var(--color-on-surface);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-body);
+}
+ 
+.intelligence-parking-label {
+  color: var(--color-on-surface);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  margin-bottom: var(--spacing-xs);
+}
+ 
+.intelligence-parking-list {
+  gap: var(--spacing-xs);
+  margin: 0;
+  display: flex;
+  padding: 0;
+  list-style: none;
+  flex-direction: column;
+}
+ 
+.intelligence-safety-note {
+  color: var(--color-on-surface);
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-size: var(--font-size-sm);
+  background: color-mix(in srgb, var(--color-accent) 8%, transparent);
+  margin-top: var(--spacing-sm);
+  border-left: 3px solid var(--color-accent);
+  line-height: var(--line-height-body);
+  border-radius: var(--border-radius-sm);
+}
+ 
+.intelligence-address {
+  color: var(--color-on-surface-secondary);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-body);
+  margin-bottom: var(--spacing-md);
+}
+ 
+.intelligence-map-btn {
+  gap: var(--spacing-xs);
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+  cursor: pointer;
+  display: inline-flex;
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-size: var(--font-size-sm);
+  background: transparent;
+  transition: all 0.3s ease;
+  align-items: center;
+  font-family: var(--font-family-body);
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--border-radius-control);
+}
+ 
+.intelligence-entry-tip {
+  color: var(--color-on-surface);
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-size: var(--font-size-sm);
+  background: color-mix(in srgb, var(--color-accent) 8%, transparent);
+  margin-top: var(--spacing-md);
+  line-height: var(--line-height-body);
+  border-radius: var(--border-radius-sm);
+}
+ 
+.intelligence-cost-item {
+  gap: 4px;
+  border: 1px solid color-mix(in srgb, var(--color-accent) 20%, transparent);
+  display: flex;
+  padding: var(--spacing-md);
+  background: color-mix(in srgb, var(--color-accent) 5%, transparent);
+  border-radius: var(--border-radius-sm);
+  flex-direction: column;
+}
+ 
+.intelligence-cost-highlight {
+  background: color-mix(in srgb, var(--color-accent) 12%, transparent);
+  grid-column: 1 / -1;
+  border-color: var(--color-accent);
+}
+ 
+.intelligence-rating-display {
+  gap: var(--spacing-sm);
+  display: flex;
+  align-items: center;
+}
+ 
+.intelligence-crowd-info {
+  gap: var(--spacing-xs);
+  display: flex;
+  flex-direction: column;
+}
+ 
+.intelligence-best-time {
+  color: var(--color-on-surface);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-body);
+}
+ 
+.intelligence-cost-label {
+  color: var(--color-on-surface-secondary);
+  font-size: var(--font-size-xs);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+ 
+.intelligence-cost-value {
+  color: var(--color-accent);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-heading);
+}
+ 
+.intelligence-stars {
+  gap: 2px;
+  display: flex;
+}
+ 
+.intelligence-rating-number {
+  color: var(--color-accent);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-heading);
+  margin-left: var(--spacing-xs);
+}
+ 
+.intelligence-crowd-label-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+ 
+.intelligence-crowd-meter {
+  height: 8px;
+  overflow: hidden;
+  background: var(--color-border);
+  border-radius: var(--border-radius-full);
+}
+ 
+.intelligence-star-filled {
+  color: var(--color-accent);
+}
+ 
+.intelligence-crowd-label {
+  color: var(--color-on-surface-secondary);
+  font-size: var(--font-size-sm);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+ 
+.intelligence-crowd-status {
+  padding: 2px var(--spacing-sm);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--border-radius-sm);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+ 
+.intelligence-crowd-high {
+  color: #e74c3c;
+  background: color-mix(in srgb, #e74c3c 20%, transparent);
+}
+ 
+.intelligence-crowd-fill {
+  height: 100%;
+  transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: var(--border-radius-full);
+}
+ 
+.intelligence-crowd-fill-high {
+  width: 85%;
+  background: linear-gradient(90deg, #e74c3c 0%, #c0392b 100%);
+}
+ 
+.intelligence-star-half {
+  color: var(--color-accent);
+}
+ 
+.intelligence-crowd-medium {
+  color: #f39c12;
+  background: color-mix(in srgb, #f39c12 20%, transparent);
+}
+ 
+.intelligence-crowd-fill-medium {
+  width: 60%;
+  background: linear-gradient(90deg, #f39c12 0%, #d68910 100%);
+}
+ 
+.intelligence-filter-select:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--color-accent) 20%, transparent);
+  border-color: var(--color-accent);
+}
+ 
+.intelligence-search-input::placeholder {
+  color: var(--color-on-surface-secondary);
+  opacity: 0.5;
+}
+ 
+.intelligence-search-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--color-accent) 20%, transparent);
+  border-color: var(--color-accent);
+}
+ 
+.intelligence-venue-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 30px color-mix(in srgb, var(--color-accent) 20%, transparent), 0 10px 40px rgba(0, 0, 0, 0.3);
+  border-color: var(--color-accent);
+}
+ 
+.intelligence-info-item  strong {
+  color: var(--color-accent);
+  font-weight: var(--font-weight-medium);
+}
+ 
+.intelligence-parking-list  li {
+  color: var(--color-on-surface-secondary);
+  position: relative;
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-body);
+  padding-left: var(--spacing-lg);
+}
+ 
+.intelligence-parking-list  li::before {
+  left: 0;
+  color: var(--color-accent);
+  content: "•";
+  position: absolute;
+  font-weight: bold;
+}
+ 
+.intelligence-safety-note  strong {
+  color: var(--color-accent);
+}
+ 
+.intelligence-map-btn:hover {
+  color: var(--color-on-accent);
+  background: var(--color-accent);
+}
+ 
+.intelligence-entry-tip  strong {
+  color: var(--color-accent);
+}
+ 
+.intelligence-best-time  strong {
+  color: var(--color-accent);
+}
+ 
+.new-york-venues-section {
+  padding: var(--spacing-4xl) var(--spacing-xl);
+  position: relative;
+  background: var(--color-surface);
+}
+ 
+.new-york-venues-container {
+  margin: 0 auto;
+  max-width: var(--content-max-width);
+}
+ 
+.new-york-venues-header {
+  color: var(--color-accent);
+  text-align: center;
+  margin-bottom: var(--spacing-3xl);
+}
+ 
+.new-york-venues-grid {
+  gap: var(--spacing-2xl);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+ 
+.new-york-venue-card {
+  border: 2px solid var(--color-accent);
+  overflow: hidden;
+  position: relative;
+  background: var(--color-surface);
+  box-shadow: 0 0 30px rgba(212, 175, 55, 0.15);
+  transition: all 0.4s ease;
+  border-radius: var(--border-radius-xl);
+}
+ 
+.new-york-venue-card-inner {
+  gap: var(--spacing-lg);
+  display: flex;
+  padding: var(--spacing-xl);
+  flex-direction: column;
+}
+ 
+.new-york-venue-header {
+  gap: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+}
+ 
+.new-york-venue-image-wrapper {
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+  position: relative;
+  border-radius: var(--border-radius-lg);
+}
+ 
+.new-york-venue-snapshot {
+  gap: var(--spacing-xs);
+  border: 1px solid var(--color-border);
+  display: flex;
+  padding: var(--spacing-md);
+  background: var(--color-surface-elevated);
+  border-radius: var(--border-radius-md);
+  flex-direction: column;
+}
+ 
+.new-york-venue-section {
+  gap: var(--spacing-md);
+  display: flex;
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--spacing-md);
+  flex-direction: column;
+}
+ 
+.new-york-venue-actions {
+  gap: var(--spacing-md);
+  display: flex;
+  padding-top: var(--spacing-md);
+}
+ 
+.new-york-venue-title-row {
+  gap: var(--spacing-sm);
+  display: flex;
+  flex-direction: column;
+}
+ 
+.new-york-venue-member-badge {
+  gap: var(--spacing-xs);
+  color: var(--color-on-accent);
+  width: fit-content;
+  display: flex;
+  padding: var(--spacing-xs) var(--spacing-md);
+  font-size: var(--font-size-xs);
+  background: var(--color-accent);
+  align-items: center;
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--border-radius-full);
+}
+ 
+.new-york-venue-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+ 
+.new-york-snapshot-label {
+  color: var(--color-accent);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+ 
+.new-york-snapshot-value {
+  color: var(--color-on-surface);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+}
+ 
+.new-york-section-title {
+  color: var(--color-accent);
+  font-size: var(--font-size-lg);
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-heading);
+  line-height: var(--line-height-heading);
+}
+ 
+.new-york-plan-grid {
+  gap: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+}
+ 
+.new-york-parking-list {
+  gap: var(--spacing-sm);
+  display: flex;
+  flex-direction: column;
+}
+ 
+.new-york-address-content {
+  gap: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+}
+ 
+.new-york-cost-grid {
+  gap: var(--spacing-md);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+ 
+.new-york-rating-content {
+  gap: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+}
+ 
+.new-york-action-btn-primary {
+  flex: 1;
+}
+ 
+.new-york-action-btn-secondary {
+  flex: 1;
+}
+ 
+.new-york-venue-name {
+  color: var(--color-on-surface);
+  font-size: var(--font-size-2xl);
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-heading);
+  line-height: var(--line-height-heading);
+}
+ 
+.new-york-venue-tags {
+  gap: var(--spacing-sm);
+  display: flex;
+  flex-wrap: wrap;
+}
+ 
+.new-york-lock-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.new-york-plan-item {
+  gap: var(--spacing-md);
+  display: flex;
+  align-items: flex-start;
+}
+ 
+.new-york-parking-item {
+  gap: var(--spacing-sm);
+  display: flex;
+  align-items: flex-start;
+}
+ 
+.new-york-parking-safety {
+  gap: var(--spacing-xs);
+  border: 1px solid color-mix(in srgb, #e74c3c 30%, transparent);
+  display: flex;
+  padding: var(--spacing-sm);
+  background: color-mix(in srgb, #e74c3c 10%, transparent);
+  margin-top: var(--spacing-xs);
+  border-radius: var(--border-radius-sm);
+  flex-direction: column;
+}
+ 
+.new-york-address-text {
+  color: var(--color-on-surface);
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+}
+ 
+.new-york-map-btn {
+  width: fit-content;
+}
+ 
+.new-york-entry-tip {
+  gap: var(--spacing-xs);
+  border: 1px solid var(--color-border);
+  display: flex;
+  padding: var(--spacing-sm);
+  background: var(--color-surface-elevated);
+  border-radius: var(--border-radius-sm);
+  flex-direction: column;
+}
+ 
+.new-york-cost-item {
+  gap: var(--spacing-xs);
+  display: flex;
+  flex-direction: column;
+}
+ 
+.new-york-cost-total {
+  gap: var(--spacing-xs);
+  border: 1px solid var(--color-accent);
+  display: flex;
+  padding: var(--spacing-md);
+  background: var(--color-surface-elevated);
+  grid-column: 1 / -1;
+  border-radius: var(--border-radius-md);
+  flex-direction: column;
+}
+ 
+.new-york-rating-row {
+  gap: var(--spacing-md);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+ 
+.new-york-crowd-meter {
+  width: 100%;
+  height: 8px;
+  overflow: hidden;
+  position: relative;
+  background: var(--color-surface-elevated);
+  border-radius: var(--border-radius-full);
+}
+ 
+.new-york-best-time {
+  gap: var(--spacing-sm);
+  display: flex;
+  align-items: center;
+}
+ 
+.new-york-venue-city-tag {
+  color: var(--color-accent);
+  border: 1px solid color-mix(in srgb, var(--color-accent) 30%, transparent);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  font-size: var(--font-size-xs);
+  background: color-mix(in srgb, var(--color-accent) 15%, transparent);
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--border-radius-full);
+}
+ 
+.new-york-venue-category-tag {
+  color: var(--color-secondary);
+  border: 1px solid color-mix(in srgb, var(--color-secondary) 30%, transparent);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  font-size: var(--font-size-xs);
+  background: color-mix(in srgb, var(--color-secondary) 15%, transparent);
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--border-radius-full);
+}
+ 
+.new-york-plan-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  background: color-mix(in srgb, var(--color-accent) 15%, transparent);
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: var(--border-radius-md);
+  justify-content: center;
+}
+ 
+.new-york-plan-content {
+  gap: var(--spacing-xs);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+ 
+.new-york-parking-label {
+  color: var(--color-accent);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+}
+ 
+.new-york-parking-icon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  justify-content: center;
+}
+ 
+.new-york-parking-text {
+  color: var(--color-on-surface);
+  font-size: var(--font-size-sm);
+  line-height: 1.5;
+}
+ 
+.new-york-safety-label {
+  color: #e74c3c;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  text-transform: uppercase;
+}
+ 
+.new-york-safety-text {
+  color: var(--color-on-surface);
+  font-size: var(--font-size-sm);
+}
+ 
+.new-york-tip-label {
+  color: var(--color-accent);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  text-transform: uppercase;
+}
+ 
+.new-york-tip-text {
+  color: var(--color-on-surface);
+  font-size: var(--font-size-sm);
+}
+ 
+.new-york-cost-label {
+  color: var(--color-on-surface-secondary);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+}
+ 
+.new-york-cost-value {
+  color: var(--color-accent);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-heading);
+}
+ 
+.new-york-cost-total-label {
+  color: var(--color-accent);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+}
+ 
+.new-york-cost-total-value {
+  color: var(--color-accent);
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-heading);
+}
+ 
+.new-york-rating-stars {
+  gap: var(--spacing-xs);
+  display: flex;
+  align-items: center;
+}
+ 
+.new-york-crowd-level {
+  gap: var(--spacing-xs);
+  display: flex;
+  align-items: center;
+}
+ 
+.new-york-crowd-bar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--color-secondary), var(--color-accent));
+  transition: width 0.4s ease;
+  border-radius: var(--border-radius-full);
+}
+ 
+.new-york-best-time-label {
+  color: var(--color-on-surface-secondary);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+}
+ 
+.new-york-best-time-value {
+  color: var(--color-on-surface);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+}
+ 
+.new-york-plan-label {
+  color: var(--color-on-surface-secondary);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+}
+ 
+.new-york-plan-value {
+  color: var(--color-on-surface);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+}
+ 
+.new-york-rating-value {
+  color: var(--color-on-surface);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-heading);
+}
+ 
+.new-york-crowd-label {
+  color: var(--color-on-surface-secondary);
+  font-size: var(--font-size-sm);
+}
+ 
+.new-york-crowd-badge {
+  padding: var(--spacing-xs) var(--spacing-sm);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--border-radius-sm);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+ 
+.new-york-crowd-very-high {
+  color: var(--color-accent);
+  background: color-mix(in srgb, var(--color-accent) 20%, transparent);
+}
+ 
+.new-york-crowd-high {
+  color: var(--color-secondary);
+  background: color-mix(in srgb, var(--color-secondary) 20%, transparent);
+}
+ 
+.new-york-venue-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 50px rgba(212, 175, 55, 0.3);
+  border-color: var(--color-secondary);
+}
+ 
+.new-york-venue-card:hover .new-york-venue-image {
+  transform: scale(1.05);
+}
+ 
+.new-york-lock-icon  svg {
+  width: 14px;
+  height: 14px;
+}
+ 
+.new-york-plan-icon  svg {
+  color: var(--color-accent);
+}
+ 
+.new-york-parking-icon  svg {
+  color: var(--color-secondary);
+}
+ 
+.new-york-rating-stars  svg {
+  fill: var(--color-accent);
+  color: var(--color-accent);
+}
+ 
+.unlocked-intelligence-la-venues-section {
+  padding: var(--spacing-4xl) var(--spacing-xl);
+  background: var(--color-surface);
+}
+ 
+.la-venues-container {
+  margin: 0 auto;
+  max-width: var(--content-max-width);
+}
+ 
+.la-section-header {
+  margin-bottom: var(--spacing-3xl);
+}
+ 
+.unlocked-intelligence-la-venues-grid {
+  gap: var(--spacing-2xl);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+ 
+.la-city-title {
+  color: var(--color-accent);
+  text-align: center;
+}
+ 
+.unlocked-intelligence-la-venue-card {
+  border: 1px solid var(--color-accent);
+  overflow: hidden;
+  background: var(--color-surface-elevated);
+  box-shadow: 0 0 30px rgba(212, 175, 55, 0.15);
+  transition: all 0.3s ease;
+  border-radius: var(--border-radius-card);
+}
+ 
+.unlocked-intelligence-la-venue-image-wrapper {
+  height: 240px;
+  overflow: hidden;
+  position: relative;
+}
+ 
+.unlocked-intelligence-la-venue-content {
+  padding: var(--spacing-xl);
+}
+ 
+.la-venue-image-overlay {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  position: absolute;
+  background: linear-gradient(180deg, transparent 0%, rgba(13, 11, 10, 0.9) 100%);
+}
+ 
+.la-venue-header {
+  gap: var(--spacing-md);
+  display: flex;
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: var(--spacing-lg);
+  flex-direction: column;
+  padding-bottom: var(--spacing-lg);
+}
+ 
+.la-venue-snapshot {
+  gap: var(--spacing-sm);
+  border: 1px solid var(--color-border);
+  display: flex;
+  padding: var(--spacing-md);
+  background: rgba(212, 175, 55, 0.06);
+  align-items: center;
+  border-radius: var(--border-radius-md);
+  margin-bottom: var(--spacing-lg);
+  justify-content: space-between;
+}
+ 
+.la-venue-section {
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: var(--spacing-lg);
+  padding-bottom: var(--spacing-lg);
+}
+ 
+.la-venue-actions {
+  gap: var(--spacing-md);
+  display: flex;
+  padding-top: var(--spacing-lg);
+}
+ 
+.la-venue-title-row {
+  gap: var(--spacing-md);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+ 
+.la-member-badge {
+  gap: var(--spacing-xs);
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+  display: inline-flex;
+  padding: 6px 12px;
+  font-size: var(--font-size-xs);
+  align-self: flex-start;
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.15), rgba(184, 134, 20, 0.15));
+  align-items: center;
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--border-radius-full);
+}
+ 
+.la-snapshot-item {
+  gap: 4px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+ 
+.la-snapshot-divider {
+  width: 1px;
+  height: 30px;
+  background: var(--color-border);
+}
+ 
+.la-section-heading {
+  color: var(--color-accent);
+  margin: 0 0 var(--spacing-md) 0;
+  font-size: var(--font-size-base);
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-heading);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+ 
+.la-best-plan-grid {
+  gap: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+}
+ 
+.la-parking-intel {
+  gap: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+}
+ 
+.la-address-block {
+  gap: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+}
+ 
+.la-cost-grid {
+  gap: var(--spacing-md);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+ 
+.la-rating-crowd-grid {
+  gap: var(--spacing-md);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+ 
+.la-vip-btn {
+  flex: 1;
+}
+ 
+.la-save-btn {
+  gap: var(--spacing-xs);
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.unlocked-intelligence-la-venue-name {
+  color: var(--color-on-surface);
+  margin: 0;
+  font-size: var(--font-size-xl);
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-heading);
+  line-height: var(--line-height-heading);
+}
+ 
+.la-venue-badges {
+  gap: var(--spacing-xs);
+  display: flex;
+  flex-wrap: wrap;
+}
+ 
+.la-snapshot-label {
+  color: var(--color-on-surface-secondary);
+  font-size: var(--font-size-xs);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+ 
+.la-snapshot-value {
+  color: var(--color-on-surface);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+}
+ 
+.la-plan-item {
+  gap: var(--spacing-sm);
+  display: flex;
+  align-items: flex-start;
+}
+ 
+.la-parking-options {
+  gap: var(--spacing-sm);
+  display: flex;
+  flex-direction: column;
+}
+ 
+.la-parking-safety {
+  gap: var(--spacing-xs);
+  color: var(--color-on-surface-secondary);
+  border: 1px solid rgba(231, 76, 60, 0.3);
+  display: flex;
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-size: var(--font-size-xs);
+  background: rgba(231, 76, 60, 0.08);
+  align-items: center;
+  border-radius: var(--border-radius-sm);
+}
+ 
+.la-address {
+  color: var(--color-on-surface);
+  margin: 0;
+  font-size: var(--font-size-sm);
+  line-height: 1.6;
+}
+ 
+.la-map-btn {
+  gap: var(--spacing-xs);
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+  cursor: pointer;
+  display: inline-flex;
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-size: var(--font-size-sm);
+  align-self: flex-start;
+  background: transparent;
+  transition: all 0.3s ease;
+  align-items: center;
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--border-radius-control);
+}
+ 
+.la-entry-tip {
+  color: var(--color-on-surface-secondary);
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-size: var(--font-size-xs);
+  background: rgba(212, 175, 55, 0.08);
+  border-left: 3px solid var(--color-accent);
+  line-height: 1.5;
+  border-radius: var(--border-radius-sm);
+}
+ 
+.la-cost-item {
+  gap: 4px;
+  display: flex;
+  padding: var(--spacing-sm);
+  background: rgba(212, 175, 55, 0.06);
+  border-radius: var(--border-radius-sm);
+  flex-direction: column;
+}
+ 
+.la-cost-total {
+  border: 1px solid var(--color-accent);
+  background: rgba(212, 175, 55, 0.12);
+  grid-column: 1 / -1;
+}
+ 
+.la-rating-block {
+  display: flex;
+  align-items: center;
+}
+ 
+.la-crowd-block {
+  gap: 4px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.la-best-time-block {
+  gap: 4px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.la-city-badge {
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+  padding: 4px 10px;
+  font-size: var(--font-size-xs);
+  background: rgba(212, 175, 55, 0.12);
+  font-weight: var(--font-weight-medium);
+  white-space: nowrap;
+  border-radius: var(--border-radius-full);
+}
+ 
+.la-category-badge {
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+  padding: 4px 10px;
+  font-size: var(--font-size-xs);
+  background: rgba(212, 175, 55, 0.12);
+  font-weight: var(--font-weight-medium);
+  white-space: nowrap;
+  border-radius: var(--border-radius-full);
+}
+ 
+.la-plan-content {
+  gap: 4px;
+  display: flex;
+  flex-direction: column;
+}
+ 
+.la-parking-label {
+  color: var(--color-on-surface);
+  margin: 0 0 var(--spacing-xs) 0;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+}
+ 
+.la-parking-list {
+  gap: var(--spacing-sm);
+  margin: 0;
+  display: flex;
+  padding: 0;
+  list-style: none;
+  flex-direction: column;
+}
+ 
+.la-tip-label {
+  color: var(--color-accent);
+  font-weight: var(--font-weight-medium);
+  margin-right: 6px;
+}
+ 
+.la-cost-label {
+  color: var(--color-on-surface-secondary);
+  font-size: var(--font-size-xs);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+ 
+.la-cost-value {
+  color: var(--color-on-surface);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+}
+ 
+.la-rating-stars {
+  gap: var(--spacing-xs);
+  display: flex;
+  align-items: center;
+}
+ 
+.la-crowd-label {
+  color: var(--color-on-surface-secondary);
+  font-size: var(--font-size-xs);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+ 
+.la-crowd-badge {
+  padding: 4px 12px;
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--border-radius-full);
+}
+ 
+.la-crowd-very-high {
+  color: #e74c3c;
+  border: 1px solid rgba(231, 76, 60, 0.4);
+  background: rgba(231, 76, 60, 0.15);
+}
+ 
+.la-best-time-label {
+  color: var(--color-on-surface-secondary);
+  font-size: var(--font-size-xs);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+ 
+.la-best-time-value {
+  color: var(--color-on-surface);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+}
+ 
+.la-crowd-high {
+  color: #f39c12;
+  border: 1px solid rgba(243, 156, 18, 0.4);
+  background: rgba(243, 156, 18, 0.15);
+}
+ 
+.la-plan-label {
+  color: var(--color-on-surface-secondary);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+}
+ 
+.la-plan-value {
+  color: var(--color-on-surface);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+}
+ 
+.la-parking-option {
+  color: var(--color-on-surface-secondary);
+  font-size: var(--font-size-sm);
+  line-height: 1.5;
+}
+ 
+.la-rating-value {
+  color: var(--color-on-surface);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+}
+ 
+.la-option-label {
+  color: var(--color-accent);
+  font-weight: var(--font-weight-medium);
+  margin-right: 6px;
+}
+ 
+.unlocked-intelligence-la-venue-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 40px rgba(212, 175, 55, 0.25);
+  border-color: var(--color-accent);
+}
+ 
+.unlocked-intelligence-la-venue-card:hover .la-venue-image {
+  transform: scale(1.08);
+}
+ 
+.la-member-badge  svg {
+  color: var(--color-accent);
+}
+ 
+.la-venue-section:last-of-type {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+ 
+.la-plan-item  svg {
+  color: var(--color-accent);
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+ 
+.la-parking-safety  svg {
+  color: #e74c3c;
+  flex-shrink: 0;
+}
+ 
+.la-map-btn:hover {
+  color: var(--color-on-accent);
+  background: var(--color-accent);
+}
+ 
+.la-map-btn  svg {
+  flex-shrink: 0;
+}
+ 
+.la-rating-stars  svg {
+  color: var(--color-accent);
+}
+ 
+.unlocked-intelligence-vegas-venues-section {
+  padding: var(--spacing-4xl) var(--spacing-xl);
+  position: relative;
+  background: var(--color-surface);
+}
+ 
+.vegas-section-container {
+  margin: 0 auto;
+  max-width: var(--content-max-width);
+}
+ 
+.vegas-section-header {
+  text-align: center;
+  margin-bottom: var(--spacing-3xl);
+}
+ 
+.unlocked-intelligence-vegas-venues-grid {
+  gap: var(--spacing-3xl);
+  display: flex;
+  flex-direction: column;
+}
+ 
+.vegas-city-title {
+  color: var(--color-accent);
+  display: inline-block;
+  position: relative;
+}
+ 
+.unlocked-intelligence-vegas-venue-card {
+  border: 1px solid var(--color-outline);
+  display: flex;
+  overflow: hidden;
+  background: var(--color-surface-elevated);
+  box-shadow: 0 0 30px rgba(212, 175, 55, 0.1);
+  transition: all 0.4s ease;
+  border-radius: var(--border-radius-card);
+  flex-direction: column;
+}
+ 
+.unlocked-intelligence-vegas-venue-image-wrapper {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+ 
+.unlocked-intelligence-vegas-venue-content {
+  gap: var(--spacing-lg);
+  display: flex;
+  padding: var(--spacing-2xl);
+  flex-direction: column;
+}
+ 
+.unlocked-intelligence-vegas-venue-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+ 
+.vegas-venue-category-tag {
+  top: var(--spacing-md);
+  left: var(--spacing-md);
+  color: var(--color-on-accent);
+  padding: var(--spacing-xs) var(--spacing-md);
+  z-index: 2;
+  position: absolute;
+  font-size: var(--font-size-sm);
+  background: var(--color-accent);
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--border-radius-full);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+ 
+.vegas-venue-header {
+  gap: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+}
+ 
+.vegas-quick-snapshot {
+  gap: var(--spacing-sm);
+  display: flex;
+  padding: var(--spacing-md);
+  flex-wrap: wrap;
+  background: var(--color-surface);
+  align-items: center;
+  border-left: 3px solid var(--color-accent);
+  border-radius: var(--border-radius-md);
+  flex-direction: row;
+}
+ 
+.vegas-intel-section {
+  gap: var(--spacing-md);
+  display: flex;
+  border-bottom: 1px solid var(--color-outline);
+  flex-direction: column;
+  padding-bottom: var(--spacing-lg);
+}
+ 
+.vegas-venue-actions {
+  gap: var(--spacing-md);
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: var(--spacing-lg);
+  flex-direction: row;
+}
+ 
+.vegas-venue-name-row {
+  gap: var(--spacing-md);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+}
+ 
+.vegas-member-intel-badge {
+  gap: var(--spacing-xs);
+  color: var(--color-accent);
+  width: fit-content;
+  border: 1px solid var(--color-accent);
+  display: flex;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  font-size: var(--font-size-xs);
+  background: var(--color-surface);
+  align-items: center;
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--border-radius-sm);
+  flex-direction: row;
+}
+ 
+.vegas-snapshot-title {
+  color: var(--color-accent);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+}
+ 
+.vegas-snapshot-item {
+  color: var(--color-on-surface-secondary);
+  font-size: var(--font-size-sm);
+}
+ 
+.vegas-snapshot-divider {
+  color: var(--color-outline);
+}
+ 
+.vegas-intel-title {
+  color: var(--color-accent);
+  font-size: var(--font-size-lg);
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-heading);
+  letter-spacing: var(--letter-spacing-heading);
+}
+ 
+.vegas-intel-grid {
+  gap: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+}
+ 
+.vegas-parking-list {
+  gap: var(--spacing-sm);
+  display: flex;
+  flex-direction: column;
+}
+ 
+.vegas-address-content {
+  gap: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+}
+ 
+.vegas-cost-grid {
+  gap: var(--spacing-sm);
+  display: flex;
+  flex-direction: column;
+}
+ 
+.vegas-rating-crowd {
+  gap: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+}
+ 
+.vegas-vip-btn {
+  flex: 1;
+  min-width: 150px;
+}
+ 
+.vegas-save-btn {
+  flex: 1;
+  min-width: 150px;
+}
+ 
+.unlocked-intelligence-vegas-venue-name {
+  flex: 1;
+  color: var(--color-on-surface);
+  font-size: var(--font-size-2xl);
+  min-width: 200px;
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-heading);
+  line-height: var(--line-height-heading);
+}
+ 
+.vegas-venue-badges {
+  gap: var(--spacing-xs);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+ 
+.vegas-intel-item {
+  gap: var(--spacing-sm);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+ 
+.vegas-parking-item {
+  gap: var(--spacing-sm);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+ 
+.vegas-parking-safety {
+  color: var(--color-on-surface-secondary);
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-size: var(--font-size-sm);
+  background: color-mix(in srgb, var(--color-accent) 10%, transparent);
+  margin-top: var(--spacing-xs);
+  border-left: 3px solid var(--color-accent);
+  line-height: var(--line-height-body);
+  border-radius: var(--border-radius-sm);
+}
+ 
+.vegas-address-text {
+  color: var(--color-on-surface);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-body);
+}
+ 
+.unlocked-intelligence-vegas-map-btn {
+  gap: var(--spacing-xs);
+  color: var(--color-accent);
+  width: fit-content;
+  border: 1px solid var(--color-accent);
+  cursor: pointer;
+  display: flex;
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-size: var(--font-size-sm);
+  background: var(--color-surface);
+  transition: all 0.3s ease;
+  align-items: center;
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--border-radius-md);
+  flex-direction: row;
+}
+ 
+.vegas-entry-tip {
+  color: var(--color-on-surface-secondary);
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-size: var(--font-size-sm);
+  background: var(--color-surface);
+  border-left: 3px solid var(--color-accent);
+  line-height: var(--line-height-body);
+  border-radius: var(--border-radius-sm);
+}
+ 
+.vegas-cost-item {
+  display: flex;
+  padding: var(--spacing-sm) 0;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+ 
+
+ 
+.vegas-rating-item {
+  gap: var(--spacing-xs);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+ 
+.vegas-crowd-item {
+  display: flex;
+  padding: var(--spacing-sm) var(--spacing-md);
+  background: var(--color-surface);
+  align-items: center;
+  border-radius: var(--border-radius-sm);
+  flex-direction: row;
+  justify-content: space-between;
+}
+ 
+.vegas-best-time-item {
+  display: flex;
+  padding: var(--spacing-sm) var(--spacing-md);
+  background: var(--color-surface);
+  align-items: center;
+  border-radius: var(--border-radius-sm);
+  flex-direction: row;
+  justify-content: space-between;
+}
+ 
+.vegas-city-badge {
+  color: var(--color-on-accent);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  font-size: var(--font-size-xs);
+  background: linear-gradient(135deg, var(--color-secondary), var(--color-accent));
+  font-weight: var(--font-weight-medium);
+  white-space: nowrap;
+  border-radius: var(--border-radius-sm);
+}
+ 
+.vegas-category-badge {
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  font-size: var(--font-size-xs);
+  background: var(--color-surface);
+  font-weight: var(--font-weight-medium);
+  white-space: nowrap;
+  border-radius: var(--border-radius-sm);
+}
+ 
+.vegas-intel-content {
+  gap: 4px;
+  display: flex;
+  flex-direction: column;
+}
+ 
+.vegas-parking-bullet {
+  color: var(--color-accent);
+  flex-shrink: 0;
+  font-weight: var(--font-weight-medium);
+}
+ 
+.vegas-parking-text {
+  color: var(--color-on-surface-secondary);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-body);
+}
+ 
+.vegas-cost-label {
+  color: var(--color-on-surface-secondary);
+  font-size: var(--font-size-sm);
+}
+ 
+.vegas-cost-value {
+  color: var(--color-accent);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+}
+ 
+.vegas-rating-value {
+  color: var(--color-on-surface);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+}
+ 
+.vegas-crowd-label {
+  color: var(--color-on-surface-secondary);
+  font-size: var(--font-size-sm);
+}
+ 
+.vegas-crowd-value {
+  padding: 4px var(--spacing-sm);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--border-radius-sm);
+}
+ 
+.vegas-crowd-high {
+  color: var(--color-accent);
+  background: color-mix(in srgb, var(--color-accent) 20%, transparent);
+}
+ 
+.vegas-best-time-label {
+  color: var(--color-on-surface-secondary);
+  font-size: var(--font-size-sm);
+}
+ 
+.vegas-best-time-value {
+  color: var(--color-on-surface);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+}
+ 
+.vegas-intel-label {
+  color: var(--color-on-surface-secondary);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+}
+ 
+.vegas-intel-value {
+  color: var(--color-on-surface);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+}
+ 
+.unlocked-intelligence-vegas-venue-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 50px rgba(212, 175, 55, 0.25);
+  border-color: var(--color-accent);
+}
+ 
+.unlocked-intelligence-vegas-venue-card:hover .vegas-venue-image {
+  transform: scale(1.05);
+}
+ 
+.vegas-member-intel-badge  svg {
+  color: var(--color-accent);
+}
+ 
+.vegas-intel-section:last-of-type {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+ 
+.vegas-intel-item  svg {
+  color: var(--color-accent);
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+ 
+.vegas-parking-text  strong {
+  color: var(--color-on-surface);
+  font-weight: var(--font-weight-medium);
+}
+ 
+.vegas-parking-safety  strong {
+  color: var(--color-accent);
+  font-weight: var(--font-weight-medium);
+}
+ 
+.unlocked-intelligence-vegas-map-btn:hover {
+  color: var(--color-on-accent);
+  background: var(--color-accent);
+}
+ 
+.unlocked-intelligence-vegas-map-btn  svg {
+  color: currentColor;
+}
+ 
+.vegas-entry-tip  strong {
+  color: var(--color-accent);
+  font-weight: var(--font-weight-medium);
+}
+ 
+.vegas-cost-item.vegas-cost-total {
+  border-top: 2px solid var(--color-accent);
+  margin-top: var(--spacing-xs);
+  padding-top: var(--spacing-md);
+}
+ 
+.vegas-cost-total  .vegas-cost-label {
+  color: var(--color-on-surface);
+  font-weight: var(--font-weight-medium);
+}
+ 
+.vegas-cost-total  .vegas-cost-value {
+  font-size: var(--font-size-lg);
+}
+ 
+.vegas-rating-item  svg {
+  fill: var(--color-accent);
+  color: var(--color-accent);
+}
+ 
+.vegas-save-btn.saved {
+  color: var(--color-on-accent);
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+}
+ 
+.unlocked-intelligence-boston-section-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: var(--spacing-4xl) var(--spacing-xl);
+  max-width: var(--content-max-width);
+}
+ 
+.unlocked-intelligence-boston-section-header {
+  text-align: center;
+  margin-bottom: var(--spacing-3xl);
+}
+ 
+.unlocked-intelligence-boston-venues-grid {
+  gap: var(--spacing-2xl);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+ 
+.unlocked-intelligence-boston-venue-card {
+  border: 1px solid var(--color-accent);
+  overflow: hidden;
+  background: var(--color-surface-elevated);
+  box-shadow: 0 0 20px rgba(255, 215, 138, 0.1);
+  transition: all 0.3s ease;
+  border-radius: var(--border-radius-lg);
+}
+ 
+.unlocked-intelligence-boston-venue-image-wrapper {
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+  position: relative;
+}
+ 
+.unlocked-intelligence-boston-venue-content {
+  color: var(--color-on-surface);
+  padding: var(--spacing-xl);
+}
+ 
+.unlocked-intelligence-boston-venue-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+ 
+.boston-venue-overlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+  background: linear-gradient(to bottom, transparent 0%, rgba(13, 11, 10, 0.6) 100%);
+}
+ 
+.unlocked-intelligence-boston-venue-header {
+  margin-bottom: var(--spacing-lg);
+}
+ 
+.boston-venue-snapshot {
+  gap: var(--spacing-sm);
+  color: var(--color-on-surface-secondary);
+  display: flex;
+  padding: var(--spacing-md);
+  flex-wrap: wrap;
+  font-size: var(--font-size-sm);
+  background: rgba(255, 215, 138, 0.05);
+  align-items: center;
+  border-radius: var(--border-radius-md);
+  margin-bottom: var(--spacing-lg);
+}
+ 
+.boston-venue-section {
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: var(--spacing-lg);
+  padding-bottom: var(--spacing-lg);
+}
+ 
+.boston-venue-actions {
+  gap: var(--spacing-md);
+  display: flex;
+  margin-top: var(--spacing-lg);
+}
+ 
+.unlocked-intelligence-boston-venue-name {
+  color: var(--color-on-surface);
+  font-size: var(--font-size-2xl);
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-heading);
+  margin-bottom: var(--spacing-sm);
+}
+ 
+.boston-venue-badges {
+  gap: var(--spacing-sm);
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: var(--spacing-sm);
+  align-items: center;
+}
+ 
+
+ 
+.boston-venue-divider {
+  color: var(--color-accent);
+  opacity: 0.4;
+}
+ 
+.boston-venue-section-title {
+  color: var(--color-accent);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  margin-bottom: var(--spacing-md);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+ 
+.boston-venue-info-grid {
+  gap: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+}
+ 
+.boston-venue-parking-list {
+  gap: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+}
+ 
+.boston-venue-address-block {
+  gap: var(--spacing-sm);
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: var(--spacing-md);
+}
+ 
+.boston-venue-map-btn {
+  width: 100%;
+  margin-bottom: var(--spacing-md);
+  justify-content: center;
+}
+ 
+.boston-venue-entry-tip {
+  color: var(--color-on-surface-secondary);
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-size: var(--font-size-sm);
+  background: rgba(255, 215, 138, 0.05);
+  border-radius: var(--border-radius-sm);
+}
+ 
+.boston-venue-costs-grid {
+  gap: var(--spacing-md);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+ 
+.boston-venue-rating-row {
+  gap: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+}
+ 
+.boston-venue-cta-primary {
+  flex: 1;
+  justify-content: center;
+}
+ 
+.boston-venue-cta-secondary {
+  flex: 1;
+  justify-content: center;
+}
+ 
+.boston-venue-city-badge {
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+  display: inline-block;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  font-size: var(--font-size-xs);
+  background: transparent;
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--border-radius-full);
+}
+ 
+.boston-venue-category-badge {
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+  display: inline-block;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  font-size: var(--font-size-xs);
+  background: transparent;
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--border-radius-full);
+}
+ 
+.boston-venue-member-badge {
+  gap: 4px;
+  color: var(--color-on-accent);
+  display: inline-flex;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  font-size: var(--font-size-xs);
+  background: var(--color-accent);
+  align-items: center;
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--border-radius-full);
+}
+ 
+.boston-venue-info-item {
+  gap: var(--spacing-sm);
+  display: flex;
+  align-items: flex-start;
+}
+ 
+.boston-venue-parking-item {
+  gap: var(--spacing-sm);
+  color: var(--color-on-surface-secondary);
+  display: flex;
+  font-size: var(--font-size-sm);
+  align-items: flex-start;
+}
+ 
+.boston-venue-parking-warning {
+  color: var(--color-on-surface-secondary);
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-size: var(--font-size-sm);
+  background: rgba(255, 215, 138, 0.08);
+  border-left: 3px solid var(--color-accent);
+  border-radius: var(--border-radius-sm);
+}
+ 
+.boston-venue-address {
+  color: var(--color-on-surface-secondary);
+  margin: 0;
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-body);
+}
+ 
+.boston-venue-cost-item {
+  gap: 4px;
+  display: flex;
+  padding: var(--spacing-sm);
+  background: rgba(255, 215, 138, 0.03);
+  border-radius: var(--border-radius-sm);
+  flex-direction: column;
+}
+ 
+.boston-venue-cost-total {
+  border: 1px solid rgba(255, 215, 138, 0.2);
+  background: rgba(255, 215, 138, 0.1);
+  grid-column: 1 / -1;
+}
+ 
+.boston-venue-rating-block {
+  gap: var(--spacing-sm);
+  display: flex;
+  align-items: center;
+}
+ 
+.boston-venue-crowd-block {
+  gap: var(--spacing-sm);
+  display: flex;
+  font-size: var(--font-size-sm);
+  align-items: center;
+}
+ 
+.boston-venue-peak-block {
+  gap: var(--spacing-xs);
+  color: var(--color-on-surface-secondary);
+  display: flex;
+  font-size: var(--font-size-sm);
+  align-items: center;
+}
+ 
+.boston-venue-info-text {
+  gap: 2px;
+  display: flex;
+  flex-direction: column;
+}
+ 
+.boston-venue-cost-label {
+  color: var(--color-on-surface-secondary);
+  font-size: var(--font-size-xs);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+ 
+.boston-venue-cost-value {
+  color: var(--color-on-surface);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+}
+ 
+.boston-venue-stars {
+  gap: 6px;
+  display: flex;
+  align-items: center;
+}
+ 
+.boston-venue-crowd-label {
+  color: var(--color-on-surface-secondary);
+}
+ 
+.boston-venue-crowd-badge {
+  padding: 4px var(--spacing-sm);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--border-radius-sm);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+ 
+.boston-venue-crowd-high {
+  color: var(--color-accent);
+  background: rgba(255, 215, 138, 0.15);
+}
+ 
+
+ 
+.boston-venue-crowd-medium {
+  color: var(--color-accent);
+  background: rgba(255, 215, 138, 0.08);
+}
+ 
+.boston-venue-info-label {
+  color: var(--color-on-surface-secondary);
+  font-size: var(--font-size-xs);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+ 
+.boston-venue-info-value {
+  color: var(--color-on-surface);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+}
+ 
+.boston-venue-rating-value {
+  color: var(--color-on-surface);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+}
+ 
+.unlocked-intelligence-boston-venue-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 40px rgba(255, 215, 138, 0.25);
+  border-color: var(--color-accent);
+}
+ 
+.unlocked-intelligence-boston-venue-card:hover .boston-venue-image {
+  transform: scale(1.08);
+}
+ 
+.boston-venue-member-badge  svg {
+  width: 14px;
+  height: 14px;
+}
+ 
+.boston-venue-snapshot-item  strong {
+  color: var(--color-accent);
+  font-weight: var(--font-weight-medium);
+}
+ 
+.boston-venue-section:last-of-type {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+ 
+.boston-venue-info-item  svg {
+  color: var(--color-accent);
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+ 
+.boston-venue-parking-item  svg {
+  color: var(--color-accent);
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+ 
+.boston-venue-parking-item  strong {
+  color: var(--color-accent);
+  font-weight: var(--font-weight-medium);
+}
+ 
+.boston-venue-parking-warning  strong {
+  color: var(--color-accent);
+  font-weight: var(--font-weight-medium);
+}
+ 
+.boston-venue-address-block  svg {
+  color: var(--color-accent);
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+ 
+.boston-venue-entry-tip  strong {
+  color: var(--color-accent);
+  font-weight: var(--font-weight-medium);
+}
+ 
+.boston-venue-cost-total  .boston-venue-cost-label {
+  color: var(--color-accent);
+}
+ 
+.boston-venue-cost-total  .boston-venue-cost-value {
+  color: var(--color-accent);
+  font-size: var(--font-size-lg);
+}
+ 
+.boston-venue-stars  svg {
+  color: var(--color-accent);
+}
+ 
+.boston-venue-peak-block  svg {
+  color: var(--color-accent);
+}
+ 
 .Headings {
   font-size: 2em;
   font-family: Playfair Display;
@@ -12945,6 +15601,12 @@
   line-height: 1.15;
   text-transform: none;
   text-decoration: none;
+}
+ 
+@media(max-width: 1200px) {
+  .unlocked-intelligence-la-venues-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
  
 @media(max-width: 991px) {
@@ -13271,6 +15933,70 @@
     grid-template-columns: repeat(2, 1fr);
   }
   .top-3-tonight-gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .top-picks-intelligence-features-grid {
+    grid-template-columns: 1fr;
+  }
+  .intelligence-footer-section {
+    padding: var(--spacing-3xl) var(--spacing-lg);
+  }
+  .intelligence-footer-container {
+    gap: var(--spacing-3xl);
+  }
+  .intelligence-footer-member-box {
+    padding: var(--spacing-lg) var(--spacing-xl);
+  }
+  .intelligence-footer-member-icons {
+    gap: var(--spacing-lg);
+  }
+  .intelligence-footer-icon-item {
+    width: 2rem;
+    height: 2rem;
+  }
+  .intelligence-filter-container {
+    flex-wrap: wrap;
+  }
+  .intelligence-filter-group {
+    flex: 1 1 calc(50% - var(--spacing-lg));
+  }
+  .intelligence-search-group {
+    flex: 1 1 100%;
+  }
+  .intelligence-venues-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .new-york-venues-grid {
+    gap: var(--spacing-xl);
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .unlocked-intelligence-la-venues-section {
+    padding: var(--spacing-3xl) var(--spacing-lg);
+  }
+  .la-section-header {
+    margin-bottom: var(--spacing-2xl);
+  }
+  .unlocked-intelligence-la-venues-grid {
+    gap: var(--spacing-xl);
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .unlocked-intelligence-vegas-venues-section {
+    padding: var(--spacing-3xl) var(--spacing-lg);
+  }
+  .unlocked-intelligence-vegas-venues-grid {
+    gap: var(--spacing-2xl);
+  }
+  .unlocked-intelligence-vegas-venue-image-wrapper {
+    height: 250px;
+  }
+  .unlocked-intelligence-vegas-venue-content {
+    padding: var(--spacing-xl);
+  }
+  .unlocked-intelligence-boston-section-container {
+    padding: var(--spacing-3xl) var(--spacing-lg);
+  }
+  .unlocked-intelligence-boston-venues-grid {
+    gap: var(--spacing-xl);
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -13853,6 +16579,181 @@
   .city-select-wrapper {
     max-width: none;
   }
+  .top-picks-top-picks---featured-clubs-vip-card {
+    padding: var(--spacing-2xl);
+  }
+  .intelligence-footer-section {
+    padding: var(--spacing-2xl) var(--spacing-md);
+  }
+  .intelligence-footer-container {
+    gap: var(--spacing-2xl);
+  }
+  .intelligence-footer-member-box {
+    padding: var(--spacing-md) var(--spacing-lg);
+  }
+  .intelligence-footer-vip-cta {
+    padding-top: var(--spacing-xl);
+  }
+  .intelligence-footer-cta-actions {
+    gap: var(--spacing-sm);
+    width: 100%;
+    flex-direction: column;
+  }
+  .intelligence-footer-cta-actions  .btn {
+    width: 100%;
+  }
+  .intelligence-footer-member-text {
+    font-size: var(--font-size-sm);
+  }
+  .intelligence-footer-member-icons {
+    gap: var(--spacing-md);
+  }
+  .intelligence-hero-section {
+    height: 50vh;
+    min-height: 400px;
+  }
+  .intelligence-filter-container {
+    flex-direction: column;
+  }
+  .intelligence-hero-title {
+    font-size: var(--font-size-3xl);
+  }
+  .intelligence-hero-subtitle {
+    font-size: var(--font-size-lg);
+  }
+  .intelligence-filter-group {
+    flex: 1 1 100%;
+  }
+  .intelligence-search-group {
+    flex: 1 1 100%;
+  }
+  .intelligence-venues-grid {
+    grid-template-columns: 1fr;
+  }
+  .intelligence-card-actions {
+    flex-direction: column;
+  }
+  .intelligence-cost-grid {
+    grid-template-columns: 1fr;
+  }
+  .new-york-venues-section {
+    padding: var(--spacing-3xl) var(--spacing-md);
+  }
+  .new-york-venues-grid {
+    gap: var(--spacing-xl);
+    grid-template-columns: 1fr;
+  }
+  .new-york-venue-image-wrapper {
+    height: 200px;
+  }
+  .new-york-venue-actions {
+    flex-direction: column;
+  }
+  .new-york-cost-grid {
+    grid-template-columns: 1fr;
+  }
+  .new-york-venue-name {
+    font-size: var(--font-size-xl);
+  }
+  .new-york-rating-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .unlocked-intelligence-la-venues-section {
+    padding: var(--spacing-2xl) var(--spacing-md);
+  }
+  .unlocked-intelligence-la-venues-grid {
+    gap: var(--spacing-lg);
+    grid-template-columns: 1fr;
+  }
+  .unlocked-intelligence-la-venue-content {
+    padding: var(--spacing-lg);
+  }
+  .la-venue-snapshot {
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .la-venue-actions {
+    flex-direction: column;
+  }
+  .la-venue-title-row {
+    gap: var(--spacing-sm);
+    flex-direction: column;
+  }
+  .la-snapshot-divider {
+    display: none;
+  }
+  .la-cost-grid {
+    grid-template-columns: 1fr;
+  }
+  .la-rating-crowd-grid {
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .la-crowd-block {
+    align-items: flex-start;
+  }
+  .la-best-time-block {
+    align-items: flex-start;
+  }
+  .unlocked-intelligence-vegas-venues-section {
+    padding: var(--spacing-2xl) var(--spacing-md);
+  }
+  .unlocked-intelligence-vegas-venue-image-wrapper {
+    height: 220px;
+  }
+  .unlocked-intelligence-vegas-venue-content {
+    padding: var(--spacing-lg);
+  }
+  .vegas-quick-snapshot {
+    gap: var(--spacing-xs);
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .vegas-venue-actions {
+    flex-direction: column;
+  }
+  .vegas-venue-name-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .vegas-vip-btn {
+    width: 100%;
+  }
+  .vegas-save-btn {
+    width: 100%;
+  }
+  .unlocked-intelligence-vegas-venue-name {
+    font-size: var(--font-size-xl);
+    min-width: 100%;
+  }
+  .unlocked-intelligence-boston-section-container {
+    padding: var(--spacing-2xl) var(--spacing-md);
+  }
+  .unlocked-intelligence-boston-venues-grid {
+    gap: var(--spacing-lg);
+    grid-template-columns: 1fr;
+  }
+  .unlocked-intelligence-boston-venue-image-wrapper {
+    height: 200px;
+  }
+  .unlocked-intelligence-boston-venue-content {
+    padding: var(--spacing-lg);
+  }
+  .boston-venue-snapshot {
+    gap: var(--spacing-xs);
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .boston-venue-actions {
+    flex-direction: column;
+  }
+  .boston-venue-divider {
+    display: none;
+  }
+  .boston-venue-costs-grid {
+    grid-template-columns: 1fr;
+  }
 }
  
 @media(max-width: 479px) {
@@ -14311,5 +17212,103 @@
   }
   .top-3-tonight-testimonial-card1 {
     width: 280px;
+  }
+  .top-picks-top-picks---featured-clubs-vip-card {
+    padding: var(--spacing-xl);
+  }
+  .top-picks-intelligence-features-grid {
+    gap: var(--spacing-md);
+    padding: var(--spacing-md);
+  }
+  .top-picks-intelligence-primary-cta {
+    width: 100%;
+    font-size: var(--font-size-sm);
+    max-width: 100%;
+  }
+  .intelligence-footer-heading {
+    font-size: var(--font-size-2xl);
+  }
+  .intelligence-footer-subheading {
+    font-size: var(--font-size-base);
+  }
+  .intelligence-footer-vip-heading {
+    font-size: var(--font-size-2xl);
+  }
+  .intelligence-footer-vip-subheading {
+    font-size: var(--font-size-base);
+  }
+  .intelligence-footer-member-icons {
+    gap: var(--spacing-sm);
+  }
+  .intelligence-footer-icon-item {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+  .intelligence-hero-section {
+    height: 40vh;
+    min-height: 350px;
+  }
+  .intelligence-sticky-filter-bar {
+    padding: var(--spacing-md);
+  }
+  .intelligence-venues-section {
+    padding: var(--spacing-2xl) var(--spacing-md);
+  }
+  .intelligence-venue-card {
+    padding: var(--spacing-lg);
+  }
+  .intelligence-quick-snapshot {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .intelligence-snapshot-divider {
+    display: none;
+  }
+  .new-york-venues-header {
+    font-size: var(--font-size-2xl);
+  }
+  .new-york-venue-card-inner {
+    padding: var(--spacing-md);
+  }
+  .new-york-venue-tags {
+    flex-wrap: wrap;
+  }
+  .la-section-header {
+    margin-bottom: var(--spacing-xl);
+  }
+  .unlocked-intelligence-la-venue-image-wrapper {
+    height: 200px;
+  }
+  .unlocked-intelligence-la-venue-name {
+    font-size: var(--font-size-lg);
+  }
+  .la-venue-badges {
+    flex-direction: row;
+  }
+  .unlocked-intelligence-vegas-venue-image-wrapper {
+    height: 200px;
+  }
+  .unlocked-intelligence-vegas-venue-content {
+    padding: var(--spacing-md);
+  }
+  .vegas-intel-section {
+    gap: var(--spacing-sm);
+  }
+  .vegas-cost-item {
+    gap: 4px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .unlocked-intelligence-boston-section-header {
+    margin-bottom: var(--spacing-2xl);
+  }
+  .unlocked-intelligence-boston-venue-name {
+    font-size: var(--font-size-xl);
+  }
+  .boston-venue-badges {
+    gap: 6px;
+  }
+  .boston-venue-rating-row {
+    gap: var(--spacing-sm);
   }
 }

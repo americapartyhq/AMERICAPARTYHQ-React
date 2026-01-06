@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import Script from 'dangerous-html/react'
 import { Helmet } from 'react-helmet'
@@ -1083,9 +1084,12 @@ const LasVegasBrowseFree = (props) => {
                 </div>
               </div>
             </div>
-            <button className="vegas-intelligence-cta btn-accent btn btn-lg">
+            <Link
+              to="/sub"
+              className="las-vegas-browse-free-thq-btn-elm27 vegas-intelligence-cta btn-accent btn btn-lg"
+            >
               Get VIP Access
-            </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -1142,9 +1146,12 @@ const LasVegasBrowseFree = (props) => {
                 <option value="los-angeles">Los Angeles</option>
                 <option value="boston">Boston</option>
               </select>
-              <button className="vegas-final-cta-btn btn-accent btn btn-lg">
+              <Link
+                to="/vip"
+                className="las-vegas-browse-free-thq-btn-elm29 vegas-final-cta-btn btn-accent btn btn-lg"
+              >
                 Book Your VIP Experience
-              </button>
+              </Link>
             </div>
           </div>
         </div>

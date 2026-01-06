@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import { Helmet } from 'react-helmet'
 
@@ -399,7 +400,12 @@ const HowWeWorkBrowseFree = (props) => {
               <option value="chicago">Chicago</option>
               <option value="atlanta">Atlanta</option>
             </select>
-            <button className="btn-accent btn btn-lg">Start Exploring</button>
+            <Link
+              to="/explore"
+              className="how-we-work-browse-free-thq-btn-elm btn-accent btn btn-lg"
+            >
+              Start Exploring
+            </Link>
           </div>
         </div>
       </section>

@@ -1442,6 +1442,128 @@ const BostonBrowseFree = (props) => {
         </div>
       </div>
       <Footer></Footer>
+      <section className="intelligence-footer-section">
+        <div className="intelligence-footer-container">
+          <div className="intelligence-footer-bulk-cta">
+            <h2 className="section-title intelligence-footer-heading">
+              Ready to explore tonight?
+            </h2>
+            <p className="intelligence-footer-subheading">
+              Filter by city, category, or search — find your perfect venue in
+              seconds.
+            </p>
+            <div className="intelligence-footer-cta-actions">
+              <a href="/cities">
+                <div className="btn-accent btn btn-lg">
+                  <span>Browse Cities</span>
+                </div>
+              </a>
+              <a href="/categories">
+                <div className="btn-outline btn btn-lg">
+                  <span>Browse Categories</span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div className="intelligence-footer-member-box">
+            <div className="intelligence-footer-member-content">
+              <p className="intelligence-footer-member-text">
+                Members get: Real arrival times | Parking intel | VIP tips |
+                Live crowd updates
+              </p>
+              <div className="intelligence-footer-member-icons">
+                <div className="intelligence-footer-icon-item">
+                  <svg
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M12 6v6l4 2"></path>
+                      <circle r="10" cx="12" cy="12"></circle>
+                    </g>
+                  </svg>
+                </div>
+                <div className="intelligence-footer-icon-item">
+                  <svg
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <circle r="10" cx="12" cy="12"></circle>
+                      <path d="M9 17V7h4a3 3 0 0 1 0 6H9"></path>
+                    </g>
+                  </svg>
+                </div>
+                <div className="intelligence-footer-icon-item">
+                  <svg
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294zM5 21h14"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    ></path>
+                  </svg>
+                </div>
+                <div className="intelligence-footer-icon-item">
+                  <svg
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <g
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M16 3.128a4 4 0 0 1 0 7.744M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                      <circle r="4" cx="9" cy="7"></circle>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="intelligence-footer-vip-cta">
+            <h2 className="section-title intelligence-footer-vip-heading">
+              Want bottle service or table access?
+            </h2>
+            <p className="intelligence-footer-vip-subheading">
+              Submit a VIP request and our concierge will handle it.
+            </p>
+            <a href="/vip">
+              <div className="btn-xl intelligence-footer-vip-button btn-accent btn">
+                <span>Request VIP Now</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
   )
 }

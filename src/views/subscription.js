@@ -60,7 +60,10 @@ const Subscription = (props) => {
             </div>
           </div>
         </section>
-        <section className="membership-tiers-section">
+        <section
+          id="membership-tiers-anchor"
+          className="membership-tiers-section"
+        >
           <div className="membership-tiers-container">
             <div className="membership-tiers-header">
               <h2 className="section-title">Choose Your Experience</h2>
@@ -160,7 +163,7 @@ const Subscription = (props) => {
                   <span>Most Popular</span>
                 </div>
                 <div className="tier-card-header">
-                  <h3 className="tier-card-name">VIP</h3>
+                  <h3 className="tier-card-name">Premium</h3>
                   <div className="tier-card-price">
                     <span className="tier-price-amount">$19.99</span>
                     <span className="tier-price-period">per month</span>
@@ -276,7 +279,10 @@ const Subscription = (props) => {
                     <span>Early access to events</span>
                   </li>
                 </ul>
-                <button className="tier-card-cta btn-accent btn btn-lg">
+                <button
+                  onclick="document.getElementById('membership-tiers-anchor').scrollIntoView(&#123;behavior: 'smooth'&#125;)"
+                  className="tier-card-cta btn-accent btn btn-lg"
+                >
                   Start 1-day Free Trial
                 </button>
               </article>
@@ -738,9 +744,6 @@ const Subscription = (props) => {
               <div className="final-cta-actions">
                 <button className="btn-xl btn-accent btn">
                   Start Free Trial
-                </button>
-                <button className="btn-xl btn-outline btn">
-                  Schedule Demo
                 </button>
               </div>
             </div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import Script from 'dangerous-html/react'
 import { Helmet } from 'react-helmet'
@@ -63,16 +64,17 @@ const Top3TonightLockedPartially = (props) => {
                 experiences optimized for the perfect timing.
               </p>
               <div className="top-3-tonight-hero-cta-group">
-                <a href="#cities">
-                  <div className="btn-xl btn btn-primary">
-                    <span>Find My City</span>
-                  </div>
-                </a>
-                <a href="#tonight">
-                  <div className="btn-xl hero-btn-outline btn-outline btn">
+                <div
+                  onclick="document.getElementById('citygallerysection').scrollIntoView(&#123;behavior: 'smooth'&#125;)"
+                  className="btn-xl btn btn-primary"
+                >
+                  <span>Find My City</span>
+                </div>
+                <Link to="/top-picks">
+                  <div className="top3-tonight-locked-partially-thq-btn-elm2 btn-xl hero-btn-outline btn-outline btn">
                     <span>Tonight&apos;s Top Picks</span>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -87,22 +89,44 @@ const Top3TonightLockedPartially = (props) => {
           <div className="top-3-tonight-city-rail-container">
             <div className="city-rail top-3-tonight-city-rail">
               <div className="active top-3-tonight-city-card">
-                <span className="top-3-tonight-city-name">Miami</span>
+                <Link
+                  to="/miami"
+                  className="top3-tonight-locked-partially-thq-city-name-elm1 top-3-tonight-city-name"
+                >
+                  Miami
+                </Link>
               </div>
               <div className="top-3-tonight-city-card">
-                <span className="top-3-tonight-city-name">New York</span>
+                <Link
+                  to="/newyork"
+                  className="top3-tonight-locked-partially-thq-city-name-elm2 top-3-tonight-city-name"
+                >
+                  New York
+                </Link>
               </div>
               <div className="top-3-tonight-city-card">
-                <span className="top-3-tonight-city-name">Los Angeles</span>
+                <Link
+                  to="/lasvegas"
+                  className="top3-tonight-locked-partially-thq-city-name-elm3 top-3-tonight-city-name"
+                >
+                  Los Angeles
+                </Link>
               </div>
               <div className="top-3-tonight-city-card">
-                <span className="top-3-tonight-city-name">Las Vegas</span>
+                <Link
+                  to="/lasvegas"
+                  className="top3-tonight-locked-partially-thq-city-name-elm4 top-3-tonight-city-name"
+                >
+                  Las Vegas
+                </Link>
               </div>
               <div className="top-3-tonight-city-card">
-                <span className="top-3-tonight-city-name">Boston</span>
-              </div>
-              <div className="top-3-tonight-city-card">
-                <span className="top-3-tonight-city-name">Chicago</span>
+                <Link
+                  to="/boston"
+                  className="top3-tonight-locked-partially-thq-city-name-elm5 top-3-tonight-city-name"
+                >
+                  Boston
+                </Link>
               </div>
             </div>
           </div>
@@ -162,9 +186,12 @@ const Top3TonightLockedPartially = (props) => {
                     <button className="btn-sm btn btn-primary">
                       View Guide
                     </button>
-                    <button className="btn-outline btn-sm btn">
+                    <Link
+                      to="/vip"
+                      className="top3-tonight-locked-partially-thq-btn-elm4 btn-outline btn-sm btn"
+                    >
                       VIP Inquiry
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </article>
@@ -220,9 +247,12 @@ const Top3TonightLockedPartially = (props) => {
                     <button className="btn-sm btn btn-primary">
                       View Guide
                     </button>
-                    <button className="btn-outline btn-sm btn">
+                    <Link
+                      to="/vip"
+                      className="top3-tonight-locked-partially-thq-btn-elm6 btn-outline btn-sm btn"
+                    >
                       VIP Inquiry
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </article>
@@ -278,9 +308,12 @@ const Top3TonightLockedPartially = (props) => {
                     <button className="btn-sm btn btn-primary">
                       View Guide
                     </button>
-                    <button className="btn-outline btn-sm btn">
+                    <Link
+                      to="/vip"
+                      className="top3-tonight-locked-partially-thq-btn-elm8 btn-outline btn-sm btn"
+                    >
                       VIP Inquiry
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </article>
@@ -507,9 +540,12 @@ const Top3TonightLockedPartially = (props) => {
                       <option value="boston">Boston</option>
                     </select>
                   </div>
-                  <button className="btn-accent btn btn-lg">
+                  <Link
+                    to="/explore"
+                    className="top3-tonight-locked-partially-thq-btn-elm9 btn-accent btn btn-lg"
+                  >
                     Find the Best Clubs
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>

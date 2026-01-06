@@ -13,7 +13,7 @@ const ContactUs = (props) => {
       <Helmet>
         <title>contact-us - AMERICAPARTYHQ</title>
         <meta property="og:title" content="contact-us - AMERICAPARTYHQ" />
-        <link rel="canonical" href="https://www.americapartyhq.co/contact-us" />
+        <link rel="canonical" href="https://www.americapartyhq.co/contact" />
       </Helmet>
       <div className="contact-us-container2">
         <div className="contact-us-container3">
@@ -213,15 +213,17 @@ const ContactUs = (props) => {
                   className="contact-form-textarea"
                 ></textarea>
               </div>
-              <button
-                id="thq_button_GWWJ"
+              <a
+                href="/home"
+                id="tblAoG17IVWLU0IMK"
                 name="button"
-                type="submit"
-                data-form-field-id="thq_button_GWWJ"
-                className="contact-submit-btn btn btn-primary"
+                data-form-field-id="tblAoG17IVWLU0IMK"
+                target="_blank"
+                rel="noreferrer noopener"
+                className="contact-us-thq-btn-elm contact-submit-btn btn btn-primary"
               >
                 Send Message
-              </button>
+              </a>
             </form>
           </div>
         </div>
@@ -249,7 +251,7 @@ const ContactUs = (props) => {
                 </svg>
               </div>
               <h3 className="contact-info-title">Phone</h3>
-              <p className="contact-info-text">+1 (555) 123-4567</p>
+              <p className="contact-info-text">In progress..</p>
               <p className="contact-info-subtext">Mon-Fri 9am-6pm EST</p>
             </div>
             <div className="contact-info-card">
@@ -274,7 +276,9 @@ const ContactUs = (props) => {
                 </svg>
               </div>
               <h3 className="contact-info-title">Email</h3>
-              <p className="contact-info-text">hello@americapartyhq.com</p>
+              <p className="contact-us-thq-contact-info-text-elm2 contact-info-text">
+                contact.americapartyhq@gmail.com
+              </p>
               <p className="contact-info-subtext">We reply within 24 hours</p>
             </div>
             <div className="contact-info-card">
@@ -299,8 +303,8 @@ const ContactUs = (props) => {
                 </svg>
               </div>
               <h3 className="contact-info-title">Office</h3>
-              <p className="contact-info-text">123 Nightlife Ave</p>
-              <p className="contact-info-subtext">Miami, FL 33139</p>
+              <p className="contact-info-text">AMERICAPARTYHQ</p>
+              <p className="contact-info-subtext">Chicopee, ma 01013</p>
             </div>
           </div>
         </div>
@@ -312,16 +316,21 @@ const ContactUs = (props) => {
             Stay connected with the latest nightlife updates
           </p>
           <div className="contact-social-links">
-            <a href="#">
-              <div
-                aria-label="Follow us on Instagram"
-                className="contact-social-link"
+            <div
+              aria-label="Follow us on Instagram"
+              className="contact-social-link"
+            >
+              <a
+                href="https://www.instagram.com/americaparty.hq/"
+                target="_blank"
+                rel="noreferrer noopener"
               >
                 <svg
                   width="24"
                   xmlns="http://www.w3.org/2000/svg"
                   height="24"
                   viewBox="0 0 24 24"
+                  className="contact-us-icon25"
                 >
                   <g
                     fill="none"
@@ -341,34 +350,16 @@ const ContactUs = (props) => {
                     <path d="M16 11.37A4 4 0 1 1 12.63 8A4 4 0 0 1 16 11.37m1.5-4.87h.01"></path>
                   </g>
                 </svg>
-              </div>
-            </a>
-            <a href="#">
-              <div
-                aria-label="Follow us on Twitter"
-                className="contact-social-link"
-              >
-                <svg
-                  width="24"
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="24"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6c2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4c-.9-4.2 4-6.6 7-3.8c1.1 0 3-1.2 3-1.2"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  ></path>
-                </svg>
-              </div>
-            </a>
-            <a href="#">
+              </a>
+            </div>
+            <a
+              href="https://www.tiktok.com/@americapartyhq"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               <div
                 aria-label="Follow us on TikTok"
-                className="contact-social-link"
+                className="contact-us-thq-contact-social-link-elm2 contact-social-link"
               >
                 <svg
                   fill="currentColor"
@@ -378,30 +369,6 @@ const ContactUs = (props) => {
                   viewBox="0 0 24 24"
                 >
                   <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74a2.89 2.89 0 0 1 2.31-4.64a2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"></path>
-                </svg>
-              </div>
-            </a>
-            <a href="#">
-              <div
-                aria-label="Follow us on LinkedIn"
-                className="contact-social-link"
-              >
-                <svg
-                  width="24"
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="24"
-                  viewBox="0 0 24 24"
-                >
-                  <g
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2a2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6M2 9h4v12H2z"></path>
-                    <circle r="2" cx="4" cy="4"></circle>
-                  </g>
                 </svg>
               </div>
             </a>

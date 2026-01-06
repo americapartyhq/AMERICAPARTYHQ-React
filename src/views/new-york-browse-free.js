@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import Script from 'dangerous-html/react'
 import { Helmet } from 'react-helmet'
@@ -1358,9 +1359,12 @@ const NewYorkBrowseFree = (props) => {
                 <span>Interactive venue map</span>
               </div>
             </div>
-            <button className="nyc-premium-btn btn-accent btn btn-lg">
+            <Link
+              to="/sub"
+              className="new-york-browse-free-thq-btn-elm4 nyc-premium-btn btn-accent btn btn-lg"
+            >
               Upgrade to Premium
-            </button>
+            </Link>
           </div>
         </section>
         <section className="nyc-map-section">
@@ -1411,9 +1415,12 @@ const NewYorkBrowseFree = (props) => {
             <p className="nyc-cta-subtitle hero-subtitle">
               Browse all venues, filter by vibe, and never miss peak hours again
             </p>
-            <button className="btn-xl nyc-cta-btn btn-accent btn">
+            <Link
+              to="/newyork"
+              className="new-york-browse-free-thq-btn-elm6 btn-xl nyc-cta-btn btn-accent btn"
+            >
               Browse All NYC Venues
-            </button>
+            </Link>
           </div>
         </section>
       </div>

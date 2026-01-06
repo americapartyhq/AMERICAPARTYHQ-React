@@ -4,6 +4,10 @@
   min-height: 100vh;
 }
  
+.faq-browse-free-thq-btn-elm {
+  text-decoration: none;
+}
+ 
 .faq-browse-free-container2 {
   display: none;
 }

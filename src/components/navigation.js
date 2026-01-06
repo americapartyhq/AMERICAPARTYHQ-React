@@ -52,7 +52,7 @@ const Navigation = (props) => {
                 <span>Tonight</span>
               </div>
             </a>
-            <a href="/vip-inquiry">
+            <a href="/vip">
               <div className="navigation-link">
                 <span>VIP Inquiry</span>
               </div>

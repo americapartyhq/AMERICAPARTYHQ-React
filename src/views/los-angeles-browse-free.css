@@ -6,6 +6,10 @@
   flex-direction: column;
 }
  
+.los-angeles-browse-free-thq-btn-elm10 {
+  text-decoration: none;
+}
+ 
 .los-angeles-browse-free-thq-la-peak-bar-elm1 {
   width: 60%;
   opacity: 0.6;
@@ -19,6 +23,14 @@
 .los-angeles-browse-free-thq-la-peak-bar-elm3 {
   width: 100%;
   opacity: 1;
+}
+ 
+.los-angeles-browse-free-thq-btn-elm24 {
+  text-decoration: none;
+}
+ 
+.los-angeles-browse-free-thq-btn-elm26 {
+  text-decoration: none;
 }
  
 .los-angeles-browse-free-container2 {

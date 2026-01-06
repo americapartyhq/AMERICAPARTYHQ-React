@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import Script from 'dangerous-html/react'
 import { Helmet } from 'react-helmet'
@@ -558,15 +559,15 @@ const FAQBrowseFree = (props) => {
                   <option value="vegas">Las Vegas</option>
                   <option value="la">Los Angeles</option>
                 </select>
-                <button
+                <Link
+                  to="/explore"
                   id="thq_button_q4E-"
                   name="button"
-                  type="submit"
                   data-form-field-id="thq_button_q4E-"
-                  className="btn-accent btn btn-lg"
+                  className="faq-browse-free-thq-btn-elm btn-accent btn btn-lg"
                 >
                   Browse Free
-                </button>
+                </Link>
               </div>
             </form>
           </div>

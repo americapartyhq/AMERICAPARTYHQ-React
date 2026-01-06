@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import Script from 'dangerous-html/react'
 import { Helmet } from 'react-helmet'
@@ -33,10 +34,18 @@ const MiamiBrowseFree = (props) => {
             <h1 className="hero-title">Nightlife Intelligence - Miami</h1>
             <p className="hero-subtitle">Premium venue timing and ratings</p>
             <div className="miami-hero-actions">
-              <button className="btn-accent btn btn-lg">View All Venues</button>
-              <button className="btn-outline btn btn-lg">
+              <Link
+                to="/explore"
+                className="miami-browse-free-thq-btn-elm10 btn-accent btn btn-lg"
+              >
+                View All Venues
+              </Link>
+              <Link
+                to="/tonight"
+                className="miami-browse-free-thq-btn-elm11 btn-outline btn btn-lg"
+              >
                 Browse Tonight&apos;s Top Picks
-              </button>
+              </Link>
             </div>
           </div>
         </section>
@@ -903,9 +912,12 @@ const MiamiBrowseFree = (props) => {
                 </div>
               </div>
             </div>
-            <button className="btn-xl btn-accent btn miami-premium-cta">
-              Join Premium - $19/month
-            </button>
+            <Link
+              to="/sub"
+              className="miami-browse-free-thq-btn-elm27 btn-xl btn-accent btn miami-premium-cta"
+            >
+              Join Premium - $19.99/month
+            </Link>
           </div>
         </section>
         <section className="miami-map-section">
@@ -1012,12 +1024,18 @@ const MiamiBrowseFree = (props) => {
               venue
             </p>
             <div className="miami-final-cta-actions">
-              <button className="btn-xl btn-accent btn">
+              <Link
+                to="/miami"
+                className="miami-browse-free-thq-btn-elm28 btn-xl btn-accent btn"
+              >
                 Browse All Miami Venues
-              </button>
-              <button className="btn-outline btn btn-lg">
+              </Link>
+              <Link
+                to="/sub"
+                className="miami-browse-free-thq-btn-elm29 btn-outline btn btn-lg"
+              >
                 View Membership Plans
-              </button>
+              </Link>
             </div>
           </div>
         </section>

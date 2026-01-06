@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import Script from 'dangerous-html/react'
 import { Helmet } from 'react-helmet'
@@ -36,11 +37,11 @@ const LosAngelesBrowseFree = (props) => {
             find your perfect night out.
           </p>
           <div className="la-hero-actions">
-            <a href="#venues">
-              <div className="btn btn-primary btn-lg">
+            <Link to="/explore">
+              <div className="los-angeles-browse-free-thq-btn-elm10 btn btn-primary btn-lg">
                 <span>Browse Venues</span>
               </div>
-            </a>
+            </Link>
             <a href="#guide">
               <div className="btn-outline btn btn-lg">
                 <span>View Guide</span>
@@ -908,11 +909,11 @@ const LosAngelesBrowseFree = (props) => {
                   Get real-time crowd data, wait times, and optimal arrival
                   windows for every venue
                 </p>
-                <a href="#vip">
-                  <div className="btn-accent btn btn-lg">
+                <Link to="/sub">
+                  <div className="los-angeles-browse-free-thq-btn-elm24 btn-accent btn btn-lg">
                     <span>Access Premium Data</span>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -1234,11 +1235,11 @@ const LosAngelesBrowseFree = (props) => {
                 <span>Exclusive event invitations</span>
               </li>
             </ul>
-            <a href="#inquiry">
-              <div className="btn-xl btn-accent btn">
+            <Link to="/vip">
+              <div className="los-angeles-browse-free-thq-btn-elm26 btn-xl btn-accent btn">
                 <span>Submit VIP Inquiry</span>
               </div>
-            </a>
+            </Link>
           </div>
         </div>
       </section>

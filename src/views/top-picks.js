@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import Script from 'dangerous-html/react'
 import { Helmet } from 'react-helmet'
@@ -368,15 +369,15 @@ const TopPicks = (props) => {
                 insights—for $9.99/month.
               </p>
               <div className="intelligence-cta-group hero-actions">
-                <a href="#city-selector">
-                  <div>
+                <Link to="/explore">
+                  <div className="top-picks-container23">
                     <div className="btn-outline btn btn-lg">
                       <span>Browse Free Preview</span>
                     </div>
                   </div>
-                </a>
-                <a href="sign-up.html">
-                  <div>
+                </Link>
+                <Link to="/sub">
+                  <div className="top-picks-container24">
                     <div className="intelligence-unlock-btn btn-accent btn btn-lg">
                       <svg
                         fill="none"
@@ -407,7 +408,7 @@ const TopPicks = (props) => {
                       <span>Unlock Intelligence — $9.99/month</span>
                     </div>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -415,11 +416,36 @@ const TopPicks = (props) => {
         <section id="city-selector" className="city-filter-section">
           <div className="top-picks---featured-clubs-city-scroller-container">
             <div className="city-scroller-track">
-              <button className="active city-chip">Miami</button>
-              <button className="city-chip">New York</button>
-              <button className="city-chip">Los Angeles</button>
-              <button className="city-chip">Las Vegas</button>
-              <button className="city-chip">Boston</button>
+              <Link
+                to="/miami"
+                className="top-picks-thq-active-elm active city-chip"
+              >
+                Miami
+              </Link>
+              <Link
+                to="/newyork"
+                className="top-picks-thq-city-chip-elm1 city-chip"
+              >
+                New York
+              </Link>
+              <Link
+                to="/losangeles"
+                className="top-picks-thq-city-chip-elm2 city-chip"
+              >
+                Los Angeles
+              </Link>
+              <Link
+                to="/lasvegas"
+                className="top-picks-thq-city-chip-elm3 city-chip"
+              >
+                Las Vegas
+              </Link>
+              <Link
+                to="/boston"
+                className="top-picks-thq-city-chip-elm4 city-chip"
+              >
+                Boston
+              </Link>
               <div className="city-dropdown-wrapper">
                 <select className="city-select-compact">
                   <option disabled="true" selected="true">
@@ -509,13 +535,13 @@ const TopPicks = (props) => {
                       </div>
                     </div>
                   </a>
-                  <a href="sign-up.html">
-                    <div>
+                  <Link to="/sub">
+                    <div className="top-picks-container26">
                       <div className="btn-sm btn-accent btn">
                         <span>Unlock Intelligence</span>
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -607,13 +633,13 @@ const TopPicks = (props) => {
                       </div>
                     </div>
                   </a>
-                  <a href="sign-up.html">
-                    <div>
+                  <Link to="/sub">
+                    <div className="top-picks-container28">
                       <div className="btn-sm btn-accent btn">
                         <span>Unlock Intelligence</span>
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -674,13 +700,13 @@ const TopPicks = (props) => {
                       </div>
                     </div>
                   </a>
-                  <a href="sign-up.html">
-                    <div>
+                  <Link to="/sub">
+                    <div className="top-picks-container30">
                       <div className="btn-sm btn-accent btn">
                         <span>Unlock Intelligence</span>
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -772,13 +798,13 @@ const TopPicks = (props) => {
                       </div>
                     </div>
                   </a>
-                  <a href="sign-up.html">
-                    <div>
+                  <Link to="/sub">
+                    <div className="top-picks-container32">
                       <div className="btn-sm btn-accent btn">
                         <span>Unlock Intelligence</span>
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -839,13 +865,13 @@ const TopPicks = (props) => {
                       </div>
                     </div>
                   </a>
-                  <a href="sign-up.html">
-                    <div>
+                  <Link to="/sub">
+                    <div className="top-picks-container34">
                       <div className="btn-sm btn-accent btn">
                         <span>Unlock Intelligence</span>
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -937,13 +963,13 @@ const TopPicks = (props) => {
                       </div>
                     </div>
                   </a>
-                  <a href="sign-up.html">
-                    <div>
+                  <Link to="/sub">
+                    <div className="top-picks-container36">
                       <div className="btn-sm btn-accent btn">
                         <span>Unlock Intelligence</span>
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -1299,19 +1325,22 @@ const TopPicks = (props) => {
           </div>
         </section>
         <section className="top-picks---featured-clubs-vip-cta-section intelligence-unlock-section">
-          <div className="intelligence-unlock-card top-picks---featured-clubs-vip-card">
-            <div className="vip-content">
-              <div className="intelligence-unlock-header">
+          <div className="intelligence-unlock-card top-picks-top-picks---featured-clubs-vip-card top-picks---featured-clubs-vip-card">
+            <div className="vip-content top-picks-vip-content">
+              <div className="top-picks-intelligence-unlock-header intelligence-unlock-header">
                 <svg
-                  fill="none"
                   width="48"
                   xmlns="http://www.w3.org/2000/svg"
                   height="48"
                   viewBox="0 0 24 24"
                 >
                   <path
-                    d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
-                    fill="currentColor"
+                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.12 2.12 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.12 2.12 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.12 2.12 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.12 2.12 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.12 2.12 0 0 0 1.597-1.16z"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   ></path>
                 </svg>
               </div>
@@ -1323,42 +1352,37 @@ const TopPicks = (props) => {
                 strategies, real-time insights, and personalized recommendations
                 at America&apos;s top venues.
               </p>
-              <div className="intelligence-features-grid">
-                <div className="intelligence-feature-item">
+              <div className="top-picks-intelligence-features-grid intelligence-features-grid">
+                <div className="top-picks-intelligence-feature-item intelligence-feature-item">
                   <svg
-                    fill="none"
                     width="24"
                     xmlns="http://www.w3.org/2000/svg"
                     height="24"
                     viewBox="0 0 24 24"
                   >
-                    <circle
-                      r="10"
-                      cx="12"
-                      cy="12"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                    ></circle>
-                    <polyline
-                      points="12 6 12 12 16 14"
+                    <g
+                      fill="none"
                       stroke="currentColor"
                       strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                    ></polyline>
+                    >
+                      <path d="M12 6v6l4 2"></path>
+                      <circle r="10" cx="12" cy="12"></circle>
+                    </g>
                   </svg>
                   <span>Precise Arrival Times</span>
                 </div>
-                <div className="intelligence-feature-item">
+                <div className="top-picks-intelligence-feature-item intelligence-feature-item">
                   <svg
-                    fill="none"
                     width="24"
                     xmlns="http://www.w3.org/2000/svg"
                     height="24"
                     viewBox="0 0 24 24"
                   >
                     <path
-                      d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
+                      d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.12 2.12 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.12 2.12 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.12 2.12 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.12 2.12 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.12 2.12 0 0 0 1.597-1.16z"
+                      fill="none"
                       stroke="currentColor"
                       strokeWidth="2"
                       strokeLinecap="round"
@@ -1367,117 +1391,82 @@ const TopPicks = (props) => {
                   </svg>
                   <span>Insider Strategies</span>
                 </div>
-                <div className="intelligence-feature-item">
+                <div className="top-picks-intelligence-feature-item intelligence-feature-item">
                   <svg
-                    fill="none"
                     width="24"
                     xmlns="http://www.w3.org/2000/svg"
                     height="24"
                     viewBox="0 0 24 24"
                   >
-                    <path
-                      d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"
+                    <g
+                      fill="none"
                       stroke="currentColor"
                       strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                    ></path>
-                    <polyline
-                      points="3.27 6.96 12 12.01 20.73 6.96"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    ></polyline>
-                    <line
-                      x1="12"
-                      x2="12"
-                      y1="22.08"
-                      y2="12"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    ></line>
+                    >
+                      <path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73zm1 .27V12"></path>
+                      <path d="M3.29 7L12 12l8.71-5M7.5 4.27l9 5.15"></path>
+                    </g>
                   </svg>
                   <span>Real-Time Updates</span>
                 </div>
-                <div className="intelligence-feature-item">
+                <div className="top-picks-intelligence-feature-item intelligence-feature-item">
                   <svg
-                    fill="none"
                     width="24"
                     xmlns="http://www.w3.org/2000/svg"
                     height="24"
                     viewBox="0 0 24 24"
                   >
-                    <path
-                      d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"
+                    <g
+                      fill="none"
                       stroke="currentColor"
                       strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                    ></path>
-                    <circle
-                      r="4"
-                      cx="12"
-                      cy="7"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    ></circle>
+                    >
+                      <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                      <circle r="4" cx="12" cy="7"></circle>
+                    </g>
                   </svg>
                   <span>VIP Concierge Access</span>
                 </div>
               </div>
-              <div className="vip-form-compact intelligence-dual-cta">
-                <a href="sign-up.html">
-                  <div>
-                    <button className="btn-xl intelligence-primary-cta btn-accent btn">
-                      <svg
-                        fill="none"
-                        width="20"
-                        xmlns="http://www.w3.org/2000/svg"
-                        height="20"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          d="M17 11H7C5.89543 11 5 11.8954 5 13V19C5 20.1046 5.89543 21 7 21H17C18.1046 21 19 20.1046 19 19V13C19 11.8954 18.1046 11 17 11Z"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        ></path>
-                        <path
-                          d="M12 17C12.5523 17 13 16.5523 13 16C13 15.4477 12.5523 15 12 15C11.4477 15 11 15.4477 11 16C11 16.5523 11.4477 17 12 17Z"
-                          fill="currentColor"
-                        ></path>
-                        <path
-                          d="M7 11V7C7 5.67392 7.52678 4.40215 8.46447 3.46447C9.40215 2.52678 10.6739 2 12 2C13.3261 2 14.5979 2.52678 15.5355 3.46447C16.4732 4.40215 17 5.67392 17 7V11"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        ></path>
-                      </svg>
-                      <span>Unlock Intelligence — $9.99/month</span>
-                    </button>
-                  </div>
-                </a>
-              </div>
-              <p className="vip-note intelligence-pricing-note">
-                <span className="top-picks-thq-intelligence-price-highlight-elm">
-                  $9.99/month
-                </span>
+              <Link
+                to="/sub"
+                className="top-picks-thq-btn-elm4 btn-xl intelligence-primary-cta top-picks-intelligence-primary-cta top-picks-btn-accent btn-accent btn"
+              >
+                <svg
+                  width="20"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="20"
+                  viewBox="0 0 24 24"
+                >
+                  <g
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <rect
+                      x="3"
+                      y="11"
+                      rx="2"
+                      ry="2"
+                      width="18"
+                      height="11"
+                    ></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                  </g>
+                </svg>
+                <span>Unlock Intelligence — $9.99/month</span>
+              </Link>
+              <p className="vip-note intelligence-pricing-note top-picks-intelligence-pricing-note">
+                <span className="top-picks-text64">$9.99/month</span>
                 <span>
-                  {' '}
-                  · Premium Intelligence Membership · Cancel anytime · Instant
-                  access to all cities
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
+                  · Intelligence Membership · Cancel anytime · Instant access to
+                  all cities
                 </span>
               </p>
             </div>
@@ -1565,8 +1554,8 @@ const TopPicks = (props) => {
         </section>
         <div className="container2 page-container2">
           <div className="container3 page-container3">
-            <div className="top-picks-container45">
-              <div className="top-picks-container46">
+            <div className="top-picks-container44">
+              <div className="top-picks-container45">
                 <Script
                   html={`<style>
 details[open] .top-picks---featured-clubs-faq-summary::after {
@@ -1580,8 +1569,8 @@ details[open] .top-picks---featured-clubs-faq-summary::after {
         </div>
         <div className="container4">
           <div className="container5">
-            <div className="top-picks-container47">
-              <div className="top-picks-container48">
+            <div className="top-picks-container46">
+              <div className="top-picks-container47">
                 <Script
                   html={`<script defer data-name="nightlife-interactivity">
 (function(){

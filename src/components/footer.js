@@ -37,8 +37,15 @@ const Footer = (props) => {
                 elite club-goer.
               </p>
               <div className="footer-social-wrapper">
-                <a href="#">
-                  <div aria-label="Instagram" className="footer-social-link">
+                <a
+                  href="https://www.instagram.com/americaparty.hq/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  <div
+                    aria-label="Instagram"
+                    className="footer-thq-footer-social-link-elm1 footer-social-link"
+                  >
                     <svg
                       fill="none"
                       width="20"
@@ -62,8 +69,15 @@ const Footer = (props) => {
                     </svg>
                   </div>
                 </a>
-                <a href="#">
-                  <div aria-label="TikTok" className="footer-social-link">
+                <a
+                  href="https://www.tiktok.com/@americapartyhq"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  <div
+                    aria-label="TikTok"
+                    className="footer-thq-footer-social-link-elm2 footer-social-link"
+                  >
                     <svg
                       fill="none"
                       width="20"
@@ -76,40 +90,6 @@ const Footer = (props) => {
                       strokeLinejoin="round"
                     >
                       <path d="M21 7.917v4.034A9.95 9.95 0 0 1 16 10v4.5a6.5 6.5 0 1 1-8-6.326V12.5a2.5 2.5 0 1 0 4 2V3h4.083A6.005 6.005 0 0 0 21 7.917"></path>
-                    </svg>
-                  </div>
-                </a>
-                <a href="#">
-                  <div aria-label="Twitter" className="footer-social-link">
-                    <svg
-                      fill="none"
-                      width="20"
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="20"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6c2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4c-.9-4.2 4-6.6 7-3.8c1.1 0 3-1.2 3-1.2"></path>
-                    </svg>
-                  </div>
-                </a>
-                <a href="#">
-                  <div aria-label="Facebook" className="footer-social-link">
-                    <svg
-                      fill="none"
-                      width="20"
-                      xmlns="http://www.w3.org/2000/svg"
-                      height="20"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
                     </svg>
                   </div>
                 </a>
@@ -127,28 +107,24 @@ const Footer = (props) => {
                     </Link>
                   </li>
                   <li className="footer-item">
-                    <a href="/tonight">
-                      <div className="footer-link">
+                    <Link to="/tonight">
+                      <div className="footer-thq-footer-link-elm2 footer-link">
                         <span>Tonight&apos;s Picks</span>
                       </div>
-                    </a>
+                    </Link>
                   </li>
                   <li className="footer-item">
                     <a
-                      href="/featured-clubs"
+                      href="/contact"
                       target="_blank"
                       rel="noreferrer noopener"
                     >
                       <div className="footer-thq-footer-link-elm3 footer-link">
-                        <span>Featured Clubs</span>
+                        <span>Contact us </span>
                       </div>
                     </a>
                   </li>
-                  <a
-                    href="/vip-inquiry"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                  >
+                  <a href="/vip" target="_blank" rel="noreferrer noopener">
                     <li className="footer-thq-footer-item-elm4 footer-item">
                       <div className="footer-link">
                         <span>VIP Inquiry</span>
@@ -180,11 +156,11 @@ const Footer = (props) => {
                 <div className="footer-input-group">
                   <input
                     type="email"
-                    id="thq_email_kXjf"
+                    id="tbl5Ll2muk1Jy41Se"
                     name="email"
                     required="true"
                     placeholder="Enter your email"
-                    data-form-field-id="thq_email_kXjf"
+                    data-form-field-id="tbl5Ll2muk1Jy41Se"
                     className="footer-input"
                   />
                   <button

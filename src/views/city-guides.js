@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import Script from 'dangerous-html/react'
 import { Helmet } from 'react-helmet'
@@ -442,51 +443,55 @@ const CityGuides = (props) => {
             </p>
           </div>
           <div className="city-guides-category-grid">
-            <div className="category-item">
-              <div className="city-guides-category-icon">
-                <svg
-                  fill="none"
-                  width="32"
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="32"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path>
-                  <path d="M5 3v4"></path>
-                  <path d="M19 17v4"></path>
-                  <path d="M3 5h4"></path>
-                  <path d="M17 19h4"></path>
-                </svg>
+            <Link to="/explore">
+              <div className="city-guides-thq-category-item-elm1 category-item">
+                <div className="city-guides-category-icon">
+                  <svg
+                    fill="none"
+                    width="32"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="32"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path>
+                    <path d="M5 3v4"></path>
+                    <path d="M19 17v4"></path>
+                    <path d="M3 5h4"></path>
+                    <path d="M17 19h4"></path>
+                  </svg>
+                </div>
+                <h3 className="category-label">Top 3 Tonight</h3>
               </div>
-              <h3 className="category-label">Top 3 Tonight</h3>
-            </div>
-            <div className="category-item">
-              <div className="city-guides-category-icon">
-                <svg
-                  fill="none"
-                  width="32"
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="32"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M12 2v20"></path>
-                  <path d="M2 12h20"></path>
-                  <path d="m16 16 4 4"></path>
-                  <path d="m4 4 4 4"></path>
-                  <path d="m16 8 4-4"></path>
-                  <path d="m4 20 4-4"></path>
-                </svg>
+            </Link>
+            <Link to="/explore">
+              <div className="city-guides-thq-category-item-elm2 category-item">
+                <div className="city-guides-category-icon">
+                  <svg
+                    fill="none"
+                    width="32"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="32"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M12 2v20"></path>
+                    <path d="M2 12h20"></path>
+                    <path d="m16 16 4 4"></path>
+                    <path d="m4 4 4 4"></path>
+                    <path d="m16 8 4-4"></path>
+                    <path d="m4 20 4-4"></path>
+                  </svg>
+                </div>
+                <h3 className="category-label">After 1AM</h3>
               </div>
-              <h3 className="category-label">After 1AM</h3>
-            </div>
+            </Link>
             <div className="category-item">
               <div className="city-guides-category-icon">
                 <svg
@@ -504,67 +509,78 @@ const CityGuides = (props) => {
                   <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
                 </svg>
               </div>
-              <h3 className="category-label">Hip-Hop</h3>
+              <Link to="/explore">
+                <h3 className="city-guides-thq-category-label-elm3 category-label">
+                  Hip-Hop
+                </h3>
+              </Link>
             </div>
             <div className="category-item">
               <div className="city-guides-category-icon">
-                <svg
-                  fill="none"
-                  width="32"
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="32"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M6 12h12"></path>
-                  <path d="M18 9V6a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v3"></path>
-                  <path d="M6 15v3a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-3"></path>
-                </svg>
+                <Link to="/explore">
+                  <svg
+                    fill="none"
+                    width="32"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="32"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="city-guides-icon46"
+                  >
+                    <path d="M6 12h12"></path>
+                    <path d="M18 9V6a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v3"></path>
+                    <path d="M6 15v3a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-3"></path>
+                  </svg>
+                </Link>
               </div>
               <h3 className="category-label">Girls Night</h3>
             </div>
-            <div className="category-item">
-              <div className="city-guides-category-icon">
-                <svg
-                  fill="none"
-                  width="32"
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="32"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M12 2v10"></path>
-                  <path d="m16 8-4 4-4-4"></path>
-                  <path d="M4 22h16"></path>
-                </svg>
+            <Link to="/explore">
+              <div className="city-guides-thq-category-item-elm5 category-item">
+                <div className="city-guides-category-icon">
+                  <svg
+                    fill="none"
+                    width="32"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="32"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M12 2v10"></path>
+                    <path d="m16 8-4 4-4-4"></path>
+                    <path d="M4 22h16"></path>
+                  </svg>
+                </div>
+                <h3 className="category-label">House</h3>
               </div>
-              <h3 className="category-label">House</h3>
-            </div>
-            <div className="category-item">
-              <div className="city-guides-category-icon">
-                <svg
-                  fill="none"
-                  width="32"
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="32"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"></path>
-                  <path d="M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"></path>
-                </svg>
+            </Link>
+            <Link to="/explore">
+              <div className="city-guides-thq-category-item-elm6 category-item">
+                <div className="city-guides-category-icon">
+                  <svg
+                    fill="none"
+                    width="32"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="32"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2z"></path>
+                    <path d="M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"></path>
+                  </svg>
+                </div>
+                <h3 className="category-label">Latin</h3>
               </div>
-              <h3 className="category-label">Latin</h3>
-            </div>
+            </Link>
           </div>
         </div>
       </section>

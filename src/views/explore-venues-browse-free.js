@@ -58,126 +58,6 @@ const ExploreVenuesBrowseFree = (props) => {
           </div>
         </div>
       </section>
-      <section className="page7-city-filter-section city-filter-section">
-        <div className="page7-container1 container1">
-          <h2 className="section-title">Filter Venues</h2>
-          <div className="directory-filters-grid">
-            <div className="page7-filter-group filter-group">
-              <label className="page7-filter-label filter-label">
-                <svg
-                  width="20"
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="20"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="m21 21l-2-4l-7-3.5a.55.55 0 0 1 0-1L21 3l-3.724 10.313m-1.056 2.925L14.5 21a.55.55 0 0 1-1 0L10 14l-7-3.5a.55.55 0 0 1 0-1l4.775-1.724"></path>
-                  </path>
-                </svg>
-                <span>
-                  {' '}
-                  City
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </span>
-              </label>
-              <select id="cityFilter" className="directory-filter-select">
-                <option>All Cities</option>
-                <option value="miami">Miami</option>
-                <option value="nyc">New York</option>
-                <option value="la">Los Angeles</option>
-                <option value="vegas">Las Vegas</option>
-                <option value="boston">Boston</option>
-              </select>
-            </div>
-            <div className="page7-filter-group filter-group">
-              <label className="page7-filter-label filter-label">
-                <svg
-                  width="20"
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="20"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M4 4h16v2.172a2 2 0 0 1-.586 1.414L15 12v7l-6 2v-8.5L4.52 7.572A2 2 0 0 1 4 6.227z"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  ></path>
-                </svg>
-                <span>
-                  {' '}
-                  Category
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </span>
-              </label>
-              <select id="categoryFilter" className="directory-filter-select">
-                <option>All Categories</option>
-                <option value="hip-hop">Hip-Hop</option>
-                <option value="after-1am">After 1AM</option>
-                <option value="girls-night">Girls Night</option>
-                <option value="house">House</option>
-                <option value="latin">Latin</option>
-                <option value="rooftop">Rooftop</option>
-              </select>
-            </div>
-            <div className="page7-filter-group filter-group">
-              <label className="page7-filter-label filter-label">
-                <svg
-                  width="20"
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="20"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.12 2.12 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.12 2.12 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.12 2.12 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.12 2.12 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.12 2.12 0 0 0 1.597-1.16z"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  ></path>
-                </svg>
-                <span>
-                  {' '}
-                  Rating
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </span>
-              </label>
-              <select id="ratingFilter" className="directory-filter-select">
-                <option>All Ratings</option>
-                <option value="4.5">4.5+ Stars</option>
-                <option value="4.0">4.0+ Stars</option>
-                <option value="3.5">3.5+ Stars</option>
-              </select>
-            </div>
-            <div className="directory-filter-actions">
-              <button id="applyFiltersBtn" className="page7-btn btn-accent btn">
-                Apply Filters
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
       <section className="clubs-showcase-section page7-clubs-showcase-section">
         <div className="page7-container1 container1">
           <div className="page7-section-header section-header">
@@ -1247,9 +1127,6 @@ const ExploreVenuesBrowseFree = (props) => {
             </button>
             <div className="directory-pagination-numbers">
               <button className="directory-page-number active">1</button>
-              <button className="directory-page-number">2</button>
-              <button className="directory-page-number">3</button>
-              <button className="directory-page-number">4</button>
             </div>
             <button id="nextBtn" className="btn-outline page7-btn btn">
               <span>

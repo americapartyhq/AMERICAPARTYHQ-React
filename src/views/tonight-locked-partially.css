@@ -8,6 +8,14 @@
   text-decoration: none;
 }
  
+.tonight-locked-partially-thq-btn-elm10 {
+  text-decoration: none;
+}
+ 
+.tonight-locked-partially-thq-btn-elm11 {
+  text-decoration: none;
+}
+ 
 .tonight-locked-partially-thq-slider-elm {
   top: 0;
   left: 0;
@@ -18,6 +26,10 @@
   transition: 0.4s;
   border-radius: 34px;
   background-color: var(--color-neutral);
+}
+ 
+.tonight-locked-partially-thq-btn-elm19 {
+  text-decoration: none;
 }
  
 .tonight-locked-partially-container2 {
